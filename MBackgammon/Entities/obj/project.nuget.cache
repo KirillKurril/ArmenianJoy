@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "P4q2jFHkDs5f9edX069WJNSJJPCYcdw2a/6TWunk+TSZJ0J2v6qzQxeDMQcrAKPNv4guTKgL/ISTjbo6BKGvAQ==",
+  "success": true,
+  "projectFilePath": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Entities\\Entities.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
