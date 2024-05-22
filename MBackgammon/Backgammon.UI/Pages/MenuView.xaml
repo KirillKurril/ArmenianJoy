@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Backgammon.UI.Pages.MenuView"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:entities="clr-namespace:Entities.Models;assembly=Entities"
+             xmlns:models="clr-namespace:Backgammon.UI.ViewModels"
+             x:DataType="models:MenuViewModel"
+             Title="Menu">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="0.6*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.65*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="0.65*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0"
+                    Text="Нарды" 
+                    Command="{Binding GoToOfflineGameCommand}"/>
+            <Button Grid.Row="2" 
+                    Text="Анекдоты"
+                    Command="{Binding GoToAnecdotesCommand}"/>
+            <Button Grid.Row="4" 
+                    Text="Киндзмараули" 
+                    Command="{Binding GoToConnectionPageCommand}"/>
+        </Grid>
+    </Grid>
+</ContentPage>
