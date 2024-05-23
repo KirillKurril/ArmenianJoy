@@ -1,0 +1,16 @@
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.Client\bin\Debug\net8.0\Backgammon.Client.deps.json
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.Client\bin\Debug\net8.0\Backgammon.Client.dll
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.Client\bin\Debug\net8.0\Backgammon.Client.pdb
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.Client\bin\Debug\net8.0\Entities.dll
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.Client\bin\Debug\net8.0\Entities.pdb
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.Client\obj\Debug\net8.0\Backgammon.Client.csproj.AssemblyReference.cache
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.Client\obj\Debug\net8.0\Backgammon.Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.Client\obj\Debug\net8.0\Backgammon.Client.AssemblyInfoInputs.cache
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.Client\obj\Debug\net8.0\Backgammon.Client.AssemblyInfo.cs
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.Client\obj\Debug\net8.0\Backgammon.Client.csproj.CoreCompileInputs.cache
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.Client\obj\Debug\net8.0\Backgammon.Client.sourcelink.json
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.Client\obj\Debug\net8.0\Backgamm.77498532.Up2Date
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.Client\obj\Debug\net8.0\Backgammon.Client.dll
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.Client\obj\Debug\net8.0\refint\Backgammon.Client.dll
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.Client\obj\Debug\net8.0\Backgammon.Client.pdb
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.Client\obj\Debug\net8.0\ref\Backgammon.Client.dll

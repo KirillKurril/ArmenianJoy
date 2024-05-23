@@ -3,7 +3,7 @@ using Entities.Models;
 
 namespace Backgammon.Client.Abstractions
 {
-    public interface IClient
+    public interface IGameClient
     {
         public string _roomName { get; }
         public string URL { get; }

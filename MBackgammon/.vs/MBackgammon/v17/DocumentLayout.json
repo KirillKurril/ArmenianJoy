@@ -1,0 +1,385 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Uni\\ArmenianJoy\\MBackgammon\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|c:\\uni\\armenianjoy\\mbackgammon\\backgammon.ui\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|solutionrelative:backgammon.ui\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|c:\\uni\\armenianjoy\\mbackgammon\\backgammon.ui\\pages\\connectioninitview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|solutionrelative:backgammon.ui\\pages\\connectioninitview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|c:\\uni\\armenianjoy\\mbackgammon\\backgammon.ui\\viewmodels\\connectioninitviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|solutionrelative:backgammon.ui\\viewmodels\\connectioninitviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAA52555-EF3E-474F-9F3D-E539719C67D4}|Backgammon.Client\\Backgammon.Client.csproj|c:\\uni\\armenianjoy\\mbackgammon\\backgammon.client\\services\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAA52555-EF3E-474F-9F3D-E539719C67D4}|Backgammon.Client\\Backgammon.Client.csproj|solutionrelative:backgammon.client\\services\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|c:\\uni\\armenianjoy\\mbackgammon\\backgammon.ui\\backgammon.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|solutionrelative:backgammon.ui\\backgammon.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAA52555-EF3E-474F-9F3D-E539719C67D4}|Backgammon.Client\\Backgammon.Client.csproj|c:\\uni\\armenianjoy\\mbackgammon\\backgammon.client\\abstractions\\iclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAA52555-EF3E-474F-9F3D-E539719C67D4}|Backgammon.Client\\Backgammon.Client.csproj|solutionrelative:backgammon.client\\abstractions\\iclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAA52555-EF3E-474F-9F3D-E539719C67D4}|Backgammon.Client\\Backgammon.Client.csproj|c:\\uni\\armenianjoy\\mbackgammon\\backgammon.client\\backgammon.client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CAA52555-EF3E-474F-9F3D-E539719C67D4}|Backgammon.Client\\Backgammon.Client.csproj|solutionrelative:backgammon.client\\backgammon.client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|c:\\uni\\armenianjoy\\mbackgammon\\backgammon.ui\\pages\\anecdotesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|solutionrelative:backgammon.ui\\pages\\anecdotesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|c:\\uni\\armenianjoy\\mbackgammon\\backgammon.ui\\pages\\offlinebackgammonview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|solutionrelative:backgammon.ui\\pages\\offlinebackgammonview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|c:\\uni\\armenianjoy\\mbackgammon\\backgammon.ui\\pages\\onlinebackgammonview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|solutionrelative:backgammon.ui\\pages\\onlinebackgammonview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|c:\\uni\\armenianjoy\\mbackgammon\\backgammon.ui\\pages\\settingsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|solutionrelative:backgammon.ui\\pages\\settingsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|c:\\uni\\armenianjoy\\mbackgammon\\backgammon.ui\\pages\\menuview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|solutionrelative:backgammon.ui\\pages\\menuview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|c:\\uni\\armenianjoy\\mbackgammon\\backgammon.ui\\pages\\menuview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|solutionrelative:backgammon.ui\\pages\\menuview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|c:\\uni\\armenianjoy\\mbackgammon\\backgammon.ui\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|solutionrelative:backgammon.ui\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|c:\\uni\\armenianjoy\\mbackgammon\\backgammon.ui\\pages\\connectioninitview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|solutionrelative:backgammon.ui\\pages\\connectioninitview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|c:\\uni\\armenianjoy\\mbackgammon\\backgammon.ui\\pages\\anecdotesview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|solutionrelative:backgammon.ui\\pages\\anecdotesview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|c:\\uni\\armenianjoy\\mbackgammon\\backgammon.ui\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|solutionrelative:backgammon.ui\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\.nuget\\packages\\communitytoolkit.maui\\9.0.0\\ReadMe.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|c:\\uni\\armenianjoy\\mbackgammon\\backgammon.ui\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|solutionrelative:backgammon.ui\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|c:\\uni\\armenianjoy\\mbackgammon\\backgammon.ui\\viewmodels\\menuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|solutionrelative:backgammon.ui\\viewmodels\\menuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|c:\\uni\\armenianjoy\\mbackgammon\\backgammon.ui\\viewmodels\\settingsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|solutionrelative:backgammon.ui\\viewmodels\\settingsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|c:\\uni\\armenianjoy\\mbackgammon\\backgammon.ui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89B87E1-4E48-426C-895E-6ED66F68F6E9}|Backgammon.UI\\Backgammon.UI.csproj|solutionrelative:backgammon.ui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.Client\\Services\\Client.cs",
+              "RelativeDocumentMoniker": "Backgammon.Client\\Services\\Client.cs",
+              "ToolTip": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.Client\\Services\\Client.cs",
+              "RelativeToolTip": "Backgammon.Client\\Services\\Client.cs",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAAAAAAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T00:46:13.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConnectionInitView.xaml",
+              "DocumentMoniker": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\Pages\\ConnectionInitView.xaml",
+              "RelativeDocumentMoniker": "Backgammon.UI\\Pages\\ConnectionInitView.xaml",
+              "ToolTip": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\Pages\\ConnectionInitView.xaml",
+              "RelativeToolTip": "Backgammon.UI\\Pages\\ConnectionInitView.xaml",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAiwGIAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-23T00:35:08.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConnectionInitViewModel.cs",
+              "DocumentMoniker": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\ViewModels\\ConnectionInitViewModel.cs",
+              "RelativeDocumentMoniker": "Backgammon.UI\\ViewModels\\ConnectionInitViewModel.cs",
+              "ToolTip": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\ViewModels\\ConnectionInitViewModel.cs",
+              "RelativeToolTip": "Backgammon.UI\\ViewModels\\ConnectionInitViewModel.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAIwFsAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T00:34:10.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "Backgammon.UI\\MauiProgram.cs",
+              "ToolTip": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\MauiProgram.cs",
+              "RelativeToolTip": "Backgammon.UI\\MauiProgram.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAIwCsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T23:57:17.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IClient.cs",
+              "DocumentMoniker": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.Client\\Abstractions\\IClient.cs",
+              "RelativeDocumentMoniker": "Backgammon.Client\\Abstractions\\IClient.cs",
+              "ToolTip": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.Client\\Abstractions\\IClient.cs",
+              "RelativeToolTip": "Backgammon.Client\\Abstractions\\IClient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T00:19:17.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Backgammon.UI.csproj",
+              "DocumentMoniker": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\Backgammon.UI.csproj",
+              "RelativeDocumentMoniker": "Backgammon.UI\\Backgammon.UI.csproj",
+              "ToolTip": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\Backgammon.UI.csproj",
+              "RelativeToolTip": "Backgammon.UI\\Backgammon.UI.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-22T23:57:07.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Backgammon.Client",
+              "DocumentMoniker": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.Client\\Backgammon.Client.csproj",
+              "RelativeDocumentMoniker": "Backgammon.Client\\Backgammon.Client.csproj",
+              "ToolTip": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.Client\\Backgammon.Client.csproj",
+              "RelativeToolTip": "Backgammon.Client\\Backgammon.Client.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-23T00:45:54.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AnecdotesView.xaml",
+              "DocumentMoniker": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\Pages\\AnecdotesView.xaml",
+              "RelativeDocumentMoniker": "Backgammon.UI\\Pages\\AnecdotesView.xaml",
+              "ToolTip": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\Pages\\AnecdotesView.xaml",
+              "RelativeToolTip": "Backgammon.UI\\Pages\\AnecdotesView.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-23T00:10:53.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OfflineBackgammonView.xaml",
+              "DocumentMoniker": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\Pages\\OfflineBackgammonView.xaml",
+              "RelativeDocumentMoniker": "Backgammon.UI\\Pages\\OfflineBackgammonView.xaml",
+              "ToolTip": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\Pages\\OfflineBackgammonView.xaml",
+              "RelativeToolTip": "Backgammon.UI\\Pages\\OfflineBackgammonView.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-23T00:35:15.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OnlineBackgammonView.xaml",
+              "DocumentMoniker": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\Pages\\OnlineBackgammonView.xaml",
+              "RelativeDocumentMoniker": "Backgammon.UI\\Pages\\OnlineBackgammonView.xaml",
+              "ToolTip": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\Pages\\OnlineBackgammonView.xaml",
+              "RelativeToolTip": "Backgammon.UI\\Pages\\OnlineBackgammonView.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-23T00:02:19.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SettingsView.xaml",
+              "DocumentMoniker": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\Pages\\SettingsView.xaml",
+              "RelativeDocumentMoniker": "Backgammon.UI\\Pages\\SettingsView.xaml",
+              "ToolTip": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\Pages\\SettingsView.xaml",
+              "RelativeToolTip": "Backgammon.UI\\Pages\\SettingsView.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-23T00:35:28.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\AppShell.xaml",
+              "RelativeDocumentMoniker": "Backgammon.UI\\AppShell.xaml",
+              "ToolTip": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\AppShell.xaml",
+              "RelativeToolTip": "Backgammon.UI\\AppShell.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-23T00:02:53.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MenuView.xaml",
+              "DocumentMoniker": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\Pages\\MenuView.xaml",
+              "RelativeDocumentMoniker": "Backgammon.UI\\Pages\\MenuView.xaml",
+              "ToolTip": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\Pages\\MenuView.xaml",
+              "RelativeToolTip": "Backgammon.UI\\Pages\\MenuView.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-22T23:57:26.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ReadMe.txt",
+              "DocumentMoniker": "C:\\Users\\user\\.nuget\\packages\\communitytoolkit.maui\\9.0.0\\ReadMe.txt",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\user\\.nuget\\packages\\communitytoolkit.maui\\9.0.0\\ReadMe.txt",
+              "ToolTip": "C:\\Users\\user\\.nuget\\packages\\communitytoolkit.maui\\9.0.0\\ReadMe.txt",
+              "RelativeToolTip": "..\\..\\..\\Users\\user\\.nuget\\packages\\communitytoolkit.maui\\9.0.0\\ReadMe.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-05-23T00:13:59.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MenuView.xaml.cs",
+              "DocumentMoniker": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\Pages\\MenuView.xaml.cs",
+              "RelativeDocumentMoniker": "Backgammon.UI\\Pages\\MenuView.xaml.cs",
+              "ToolTip": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\Pages\\MenuView.xaml.cs",
+              "RelativeToolTip": "Backgammon.UI\\Pages\\MenuView.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T00:10:47.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AnecdotesView.xaml.cs",
+              "DocumentMoniker": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\Pages\\AnecdotesView.xaml.cs",
+              "RelativeDocumentMoniker": "Backgammon.UI\\Pages\\AnecdotesView.xaml.cs",
+              "ToolTip": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\Pages\\AnecdotesView.xaml.cs",
+              "RelativeToolTip": "Backgammon.UI\\Pages\\AnecdotesView.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T00:21:50.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ConnectionInitView.xaml.cs",
+              "DocumentMoniker": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\Pages\\ConnectionInitView.xaml.cs",
+              "RelativeDocumentMoniker": "Backgammon.UI\\Pages\\ConnectionInitView.xaml.cs",
+              "ToolTip": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\Pages\\ConnectionInitView.xaml.cs",
+              "RelativeToolTip": "Backgammon.UI\\Pages\\ConnectionInitView.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T00:21:54.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "Backgammon.UI\\AppShell.xaml.cs",
+              "ToolTip": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\AppShell.xaml.cs",
+              "RelativeToolTip": "Backgammon.UI\\AppShell.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T00:02:45.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MenuViewModel.cs",
+              "DocumentMoniker": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\ViewModels\\MenuViewModel.cs",
+              "RelativeDocumentMoniker": "Backgammon.UI\\ViewModels\\MenuViewModel.cs",
+              "ToolTip": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\ViewModels\\MenuViewModel.cs",
+              "RelativeToolTip": "Backgammon.UI\\ViewModels\\MenuViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T00:10:50.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SettingsViewModel.cs",
+              "DocumentMoniker": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\ViewModels\\SettingsViewModel.cs",
+              "RelativeDocumentMoniker": "Backgammon.UI\\ViewModels\\SettingsViewModel.cs",
+              "ToolTip": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\ViewModels\\SettingsViewModel.cs",
+              "RelativeToolTip": "Backgammon.UI\\ViewModels\\SettingsViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T00:04:20.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "Backgammon.UI\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\MainPage.xaml.cs",
+              "RelativeToolTip": "Backgammon.UI\\MainPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T23:57:18.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Backgammon.UI\\App.xaml.cs",
+              "ToolTip": "C:\\Uni\\ArmenianJoy\\MBackgammon\\Backgammon.UI\\App.xaml.cs",
+              "RelativeToolTip": "Backgammon.UI\\App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T00:02:50.463Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

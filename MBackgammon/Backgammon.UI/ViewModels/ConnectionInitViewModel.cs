@@ -1,12 +1,112 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Backgammon.Client.Abstractions;
+using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+
 
 namespace Backgammon.UI.ViewModels
 {
-    public partial class ConnectionInitViewModel
+    public partial class ConnectionInitViewModel : ObservableObject
     {
+        IGameClient _client;
+
+        [ObservableProperty]
+        string _roomName;
+
+        [ObservableProperty]
+        string _responseMessage;
+
+        [ObservableProperty]
+        bool _responseMessageReceived;
+
+        [ObservableProperty]
+        bool _joinOrCreateActive;
+
+        [ObservableProperty]
+        bool _createButtonActive;
+
+        [ObservableProperty]
+        bool _joinButtonActive;
+
+        [RelayCommand]
+        async Task CreateButtonСlicked() => await CreateButtonСlickedHandler();
+
+        [RelayCommand]
+        async Task JoinButtonСlicked() => await JoinButtonСlickedHandler();
+
+        [RelayCommand]
+        async Task BackButtonСlicked() => await BackButtonСlickedHandler();
+
+        [RelayCommand]
+        async Task ConfirmCreateButtonСlicked() => await ConfirmCreateButtonСlickedHandler();
+
+        [RelayCommand]
+        async Task ConfirmJoinButtonСlicked() => await ConfirmJoinButtonСlickedHandler();
+
+        public ConnectionInitViewModel(IGameClient client)
+        {
+            _client = client;
+            _client.SetURL("https://localhost:7250/game");
+            _client.ConnectionStatusEvent += ConnectionStatus;
+            _client.CreateRoomResponseEvent += RoomConnectionHandler;
+            _client.JoinRoomResponseEvent += RoomConnectionHandler;
+            Task.Run(() => _client.Connect());
+
+            JoinOrCreateActive = true;
+            CreateButtonActive = false;
+            JoinButtonActive = false;
+        }
+        private void ConnectionStatus(object sender, string message)
+        {
+            ResponseMessage = message;
+            ResponseMessageReceived = true;
+        }
+
+        private void RoomConnectionHandler(object sender, bool answer, string message)
+        {
+            ResponseMessage = message;
+            ResponseMessageReceived = true;
+        }
+
+        private async Task CreateButtonСlickedHandler()
+        {
+            await Task.Run(() =>
+            {
+                CreateButtonActive = true;
+                JoinOrCreateActive = false;
+            });
+        }
+
+        private async Task JoinButtonСlickedHandler()
+        {
+            await Task.Run(() =>
+            {
+                JoinButtonActive = true;
+                JoinOrCreateActive = false;
+            });
+        }
+
+        private async Task BackButtonСlickedHandler()
+        {
+            await Task.Run(() =>
+            {
+                CreateButtonActive = false;
+                JoinButtonActive = false;
+                JoinOrCreateActive = true;
+            });
+        }
+
+        private async Task ConfirmCreateButtonСlickedHandler()
+        {
+            if (!string.IsNullOrEmpty(RoomName))
+                await _client.CreateRoom(RoomName);
+        }
+
+        private async Task ConfirmJoinButtonСlickedHandler()
+        {
+            if (!string.IsNullOrEmpty(RoomName))
+                await _client.JoinRoom(RoomName);
+        }
+
+
     }
 }

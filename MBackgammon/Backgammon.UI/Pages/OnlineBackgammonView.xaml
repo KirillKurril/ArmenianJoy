@@ -2,6 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Backgammon.UI.Pages.OnlineBackgammonView"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:entities="clr-namespace:Entities.Models;assembly=Entities"
+             xmlns:models="clr-namespace:Backgammon.UI.ViewModels"
+             x:DataType="models:OnlineBackgammonViewModel"             
              Title="OnlineBackgammonView">
     <VerticalStackLayout>
         <Label 

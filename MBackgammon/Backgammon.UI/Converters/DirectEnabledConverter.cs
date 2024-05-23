@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace UserInterface.Converters
+namespace Backgammon.UI.Converters
 {
     public class DirectEnabledConverter : IValueConverter
     {

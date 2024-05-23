@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 
 namespace Backgammon.Client.Services
 {
-    public class Client : IClient
+    public class GameClient : IGameClient
     {
         public string _roomName { get; private set; }
         public string URL { get; private set; }
@@ -15,14 +15,14 @@ namespace Backgammon.Client.Services
         public delegate void CreateRoomResponseDelegate(object sender, bool answer, string message);
         public delegate void ConnectionStatusDelegate(object sender, string status);
 
-        public event IClient.ReceiveGameStatusDelegate ReceiveGameStatusEvent;
-        public event IClient.CreateRoomResponseDelegate CreateRoomResponseEvent;
-        public event IClient.CreateRoomResponseDelegate JoinRoomResponseEvent;
-        public event IClient.ConnectionStatusDelegate ConnectionStatusEvent;
+        public event IGameClient.ReceiveGameStatusDelegate ReceiveGameStatusEvent;
+        public event IGameClient.CreateRoomResponseDelegate CreateRoomResponseEvent;
+        public event IGameClient.CreateRoomResponseDelegate JoinRoomResponseEvent;
+        public event IGameClient.ConnectionStatusDelegate ConnectionStatusEvent;
         public event EventHandler RoomCompleted;
         public event EventHandler EndGame;
         public event EventHandler<int> ColorResponse;
-        public Client() { }
+        public GameClient() { }
         public void SetURL(string url)
             => URL = url;
 

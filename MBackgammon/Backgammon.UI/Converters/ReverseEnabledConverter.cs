@@ -1,7 +1,7 @@
 ﻿using System.Globalization;
 
 
-namespace UserInterface.Converters
+namespace Backgammon.UI.Converters
 {
     public class ReverseEnabledConverter : IValueConverter
     {

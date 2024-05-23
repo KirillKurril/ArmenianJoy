@@ -1,0 +1,83 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Backgammon.UI
+build_property.ProjectDir = C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Uni/ArmenianJoy/MBackgammon/Backgammon.UI/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Backgammon.UI.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Uni/ArmenianJoy/MBackgammon/Backgammon.UI/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Backgammon.UI.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Uni/ArmenianJoy/MBackgammon/Backgammon.UI/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Backgammon.UI.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Uni/ArmenianJoy/MBackgammon/Backgammon.UI/Pages/AnecdotesView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Backgammon.UI.Pages.AnecdotesView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AnecdotesView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AnecdotesView.xaml
+
+[C:/Uni/ArmenianJoy/MBackgammon/Backgammon.UI/Pages/ConnectionInitView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Backgammon.UI.Pages.ConnectionInitView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\ConnectionInitView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\ConnectionInitView.xaml
+
+[C:/Uni/ArmenianJoy/MBackgammon/Backgammon.UI/Pages/MenuView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Backgammon.UI.Pages.MenuView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\MenuView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\MenuView.xaml
+
+[C:/Uni/ArmenianJoy/MBackgammon/Backgammon.UI/Pages/OfflineBackgammonView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Backgammon.UI.Pages.OfflineBackgammonView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\OfflineBackgammonView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\OfflineBackgammonView.xaml
+
+[C:/Uni/ArmenianJoy/MBackgammon/Backgammon.UI/Pages/OnlineBackgammonView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Backgammon.UI.Pages.OnlineBackgammonView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\OnlineBackgammonView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\OnlineBackgammonView.xaml
+
+[C:/Uni/ArmenianJoy/MBackgammon/Backgammon.UI/Pages/SettingsView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Backgammon.UI.Pages.SettingsView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\SettingsView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\SettingsView.xaml
+
+[C:/Uni/ArmenianJoy/MBackgammon/Backgammon.UI/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Backgammon.UI.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Uni/ArmenianJoy/MBackgammon/Backgammon.UI/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Backgammon.UI.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
