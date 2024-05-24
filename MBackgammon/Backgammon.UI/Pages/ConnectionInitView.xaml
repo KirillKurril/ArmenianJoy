@@ -24,11 +24,6 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="0.5*"/>
         </Grid.ColumnDefinitions>
-        <Label
-            Grid.Row="1"
-            Grid.Column="1"
-            Text="{Binding ResponseMessage}"
-            IsVisible="{Binding ResponseMessageReceived}"/>
         <Grid Grid.Row="1"
               Grid.Column="1">
             <Grid.RowDefinitions>
@@ -54,6 +49,7 @@
                 <Button
                     IsVisible="{Binding JoinOrCreateActive}"
                     IsEnabled="{Binding JoinOrCreateActive}"
+                    Command="{Binding CreateButtonСlickedCommand}"
                       Text="Создать комнату"
                       Grid.Row="0"
                       Grid.ColumnSpan="2"
@@ -61,12 +57,12 @@
                 <Button 
                     IsVisible="{Binding JoinOrCreateActive}"
                     IsEnabled="{Binding JoinOrCreateActive}"
+                    Command="{Binding JoinButtonСlickedCommand}"
                       Text="Присоединиться к комнате"
                       Grid.Row="1"
                       Grid.ColumnSpan="2"
                       Margin="10,10,10,10"/>
                 <Entry 
-                      Text="Введите название вашей комнаты"
                       IsVisible="{Binding JoinOrCreateActive, Converter={StaticResource ReverseEnabledConverter}}"
                       IsEnabled="{Binding JoinOrCreateActive, Converter={StaticResource ReverseEnabledConverter}}"
                       Grid.Row="0"
@@ -76,13 +72,15 @@
                     IsEnabled="{Binding CreateButtonActive}"
                     Command="{Binding ConfirmCreateButtonСlickedCommand}"
                       Text="Подтвердить"
+                    Grid.Row="1"
                       Grid.ColumnSpan="2"
                       Margin="10,10,10,10"/>
                 <Button
                     IsVisible="{Binding JoinButtonActive}"
                     IsEnabled="{Binding JoinButtonActive}"
                     Command="{Binding ConfirmJoinButtonСlickedCommand}"
-                      Text="Подтвердить"
+                    Grid.Row="1"
+                    Text="Подтвердить"
                       Grid.ColumnSpan="2"
                       Margin="10,10,10,10"/>
                 <Button

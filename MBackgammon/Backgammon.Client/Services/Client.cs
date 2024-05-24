@@ -37,11 +37,14 @@ namespace Backgammon.Client.Services
                 if (hubConnection.State == HubConnectionState.Connected)
                     ConnectionStatusEvent?.Invoke(this, "Подключение выполнено успешно");
                 else
-                    ConnectionStatusEvent?.Invoke(this, "Ошибка подключения");
+                    ConnectionStatusEvent?.Invoke(this, "Неизвестная ошибка подключения\n" +
+                        "Проверьте подключение к интернету и попробуйте ещё раз");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Connection error: {ex.Message}");
+                ConnectionStatusEvent?.Invoke(this, ex.Message);
+                Console.WriteLine($"Connection error: {ex.Message}" +
+                    $"\nПроверьте подключение к интернету и попробуйте ещё раз");
             }
 
             hubConnection.On<string>("Test", (amongus) =>

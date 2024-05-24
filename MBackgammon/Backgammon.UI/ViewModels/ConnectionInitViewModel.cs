@@ -42,29 +42,33 @@ namespace Backgammon.UI.ViewModels
         [RelayCommand]
         async Task ConfirmJoinButtonСlicked() => await ConfirmJoinButtonСlickedHandler();
 
+        public delegate void ResponseDelegate(object sender, string message, string header);
+        public event ResponseDelegate ResponseEvent;
+
         public ConnectionInitViewModel(IGameClient client)
         {
             _client = client;
             _client.SetURL("https://localhost:7250/game");
-            _client.ConnectionStatusEvent += ConnectionStatus;
-            _client.CreateRoomResponseEvent += RoomConnectionHandler;
-            _client.JoinRoomResponseEvent += RoomConnectionHandler;
+            _client.ConnectionStatusEvent += ConnectionStatusHandler;
+            _client.CreateRoomResponseEvent += CreateResponseHandler;
+            _client.JoinRoomResponseEvent += JoinResponseHandler;
             Task.Run(() => _client.Connect());
 
             JoinOrCreateActive = true;
             CreateButtonActive = false;
             JoinButtonActive = false;
+            ResponseMessage = "response message";
         }
-        private void ConnectionStatus(object sender, string message)
-        {
-            ResponseMessage = message;
-            ResponseMessageReceived = true;
-        }
+        private void ConnectionStatusHandler(object sender, string message)
+            =>  ResponseEvent?.Invoke(this, message, "Попытка подключения к серверу");
+        private void CreateResponseHandler(object sender, bool successFlag, string message)
+            => ResponseEvent?.Invoke(this, message, "Попытка создания комнаты");
+        private void JoinResponseHandler(object sender, bool successFlag, string message)
+            => ResponseEvent?.Invoke(this, message, "Попытка присоединения к комнате");
 
-        private void RoomConnectionHandler(object sender, bool answer, string message)
+        private async void RoomConnectionHandler(object sender, bool answer, string message)
         {
-            ResponseMessage = message;
-            ResponseMessageReceived = true;
+            //await Task.Run(() => ConnectionResponseReceived(message));
         }
 
         private async Task CreateButtonСlickedHandler()

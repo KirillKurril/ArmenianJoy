@@ -9,6 +9,15 @@ public partial class ConnectionInitView : ContentPage
     {
         InitializeComponent();
         _viewModel = viewModel;
+        _viewModel.ResponseEvent += ServerRequestHandler;
         BindingContext = _viewModel;
+    }
+
+    private void ServerRequestHandler(object sender, string message, string header)
+    {
+        Dispatcher.Dispatch(async () =>
+        {
+            await DisplayAlert(header, message, "OK");
+        });
     }
 }
