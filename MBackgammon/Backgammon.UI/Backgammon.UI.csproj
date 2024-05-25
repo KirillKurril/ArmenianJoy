@@ -84,7 +84,7 @@
 
 	<ItemGroup>
 	  <MauiImage Include="Resources\Images\dices\1.png">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
 	  </MauiImage>
 	  <MauiImage Include="Resources\Images\dices\2.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -136,6 +136,10 @@
 		<MauiXaml Update="Pages\SettingsView.xaml">
 		  <Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Commands\" />
 	</ItemGroup>
 
 </Project>

@@ -4,8 +4,12 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
-    <Style x:Key="PageBackgroundStyle" TargetType="ContentPage">
-        <Setter Property="BackgroundImageSource" Value="Resources/Images/f.png" />
+    <Style x:Key="GamePageStyle" TargetType="ContentPage">
+        <Setter Property="BackgroundImageSource" Value="Resources/Images/field.png" />
+    </Style>
+    <Style x:Key="PositionButtonStyle" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="Transparent"/>
+        <Setter Property="BorderColor" Value="Transparent"/>
     </Style>
 
 </ResourceDictionary>

@@ -4,26 +4,31 @@ using Microsoft.Maui.Controls.Shapes;
 using Backgammon.Client.Abstractions;
 using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.ComponentModel;
+using System.Collections.ObjectModel;
 
 namespace Backgammon.UI.ViewModels
 {
     public partial class OnlineBackgammonViewModel : ObservableObject
     {
         IGameClient _client;
-        MoveVerifier verifier;
+        MoveVerifier _moveVerifier;
 
-        int firstPosition = -1;
-        bool throwEnabled = false;
-        bool fieldEnabled = false;
+        int _firstPosition = -1;
+
+        [ObservableProperty]
+        bool _throwEnabled;
+
+        [ObservableProperty]
+        bool _fieldEnabled;
 
         [ObservableProperty]
         int _diceSize;
 
         [ObservableProperty]
-        int _whiteScore;        //= -1;
+        int _whiteScore;    
 
         [ObservableProperty]
-        int _blackScore;        //= -1;
+        int _blackScore;    
 
         [ObservableProperty]
         bool _throwButtonIsActive;
@@ -35,95 +40,91 @@ namespace Backgammon.UI.ViewModels
         string _secondDicePicture;
 
         [ObservableProperty]
-        int _moveColor;     //=0
+        int _moveColor;     
+
+        public ObservableCollection<ObservableCollection<EllipseModel>> EllipseCollections { get; }
+
+        [RelayCommand]
+        async Task PositionSelected(string stringPositionIndex)
+            => await PositionSelectedHandler(stringPositionIndex);
+
+        [RelayCommand]
+        async Task CancelChoiсe() => await CancelChoiсeHandler();
 
         public OnlineBackgammonViewModel(IGameClient client)
         {
+            ThrowEnabled = false;
+            FieldEnabled = false;
+            MoveColor = 0;
+            WhiteScore = -1;
+            BlackScore = -1;
             _client = client;
             _client.ColorResponse += ReceiveColorHandler;
             _client.ReceiveGameStatusEvent += ReceiveGameDataHandler;
             _client.EndGame += EndGameHandler;
-
-            Unloaded += UnloadPageHandler;
         }
 
-        private void PositionSelected(object sender, RoutedEventArgs e)
+        private async Task PositionSelectedHandler(string stringPositionIndex)
         {
-            int position;
-            if (((Button)sender).Name == "Throw")
-                position = 25;
-            else
+            int selectedCellIndex = int.Parse(stringPositionIndex);
+            if (selectedCellIndex != 25)
             {
-                position = Convert.ToInt32(((Button)sender).Name.Substring(1));
-                if (verifier.Color == Entities.Models.Colors.Black)
-                    position = (position + 12) % 24;
+                if (_moveVerifier.Color == Entities.Models.Colors.Black)
+                    selectedCellIndex = (selectedCellIndex + 12) % 24;
             }
 
-            if (firstPosition != -1
-                && verifier.MoveConfirm(firstPosition, position))
+            if (_firstPosition != -1
+                && _moveVerifier.MoveConfirm(_firstPosition, selectedCellIndex))
             {
-                Task.Run(()
-                    => _client.MoveRequest(firstPosition, position));
-                firstPosition = -1;
-                throwEnabled = false;
+                await Task.Run(()
+                    => _client.MoveRequest(_firstPosition, selectedCellIndex));
+                _firstPosition = -1;
+                ThrowButtonIsActive = false;
             }
-            else if (verifier.MoveConfirm(firstPosition, position))
+            else if (_moveVerifier.MoveConfirm(_firstPosition, selectedCellIndex))
             {
-                firstPosition = position;
-                if (verifier.Throwable(position))
-                    throwEnabled = true;
+                _firstPosition = selectedCellIndex;
+                if (_moveVerifier.Throwable(selectedCellIndex))
+                    ThrowButtonIsActive = true;
             }
         }
 
-        private void CancelChoiсe(object sender, MouseButtonEventArgs e)
-            => firstPosition = -1;
+        private async Task CancelChoiсeHandler()
+            => await Task.Run(() => _firstPosition = -1);
         private void ReceiveColorHandler(object sender, int color)
-            => verifier.Color = color;
+            => _moveVerifier = new MoveVerifier(color);
         public void ReceiveGameDataHandler(object sender, GameStatusData data)
         {
-            verifier.Update(data.Status.ToArray(), data.DiceValues, data.MoveValues, data.ReachedHome, data.HatsOffToYou, data.Safemode);
+            _moveVerifier.Update(data.Status.ToArray(), data.DiceValues, data.MoveValues, data.ReachedHome, data.HatsOffToYou, data.Safemode);
             RefreshField(data.ExtraStatus);
-            fieldEnabled = verifier.Color == data.MoveColor;
-            whiteScore = data.Score.Item1;
-            blackScore = data.Score.Item2;
-            moveColor = data.MoveColor;
+            FieldEnabled = _moveVerifier.Color == data.MoveColor;
+            WhiteScore = data.Score.Item1;
+            BlackScore = data.Score.Item2;
+            MoveColor = data.MoveColor;
         }
 
         public void EndGameHandler(object sender, EventArgs e)
         {
-            MessageBox.Show($"Congratulations!\n{((verifier.Color == Entities.Models.Colors.White) ?
-           ("White") : ("Black"))}" +
-           $" player win!");
-
+            throw new NotImplementedException();
         }
 
         void RefreshField(List<(int, int)> extraStatus)
         {
-            ///надо колдовать через биндинг
-            for (int i = 0; i < 24; ++i)
+            for(int i = 0; i < 24; ++i)
             {
-                StackPanel stackPanel = (StackPanel)FindName($"S{i}");
-                stackPanel.Children.Clear();
-                for (int j = 0; j < extraStatus[i].Item2; ++j)
-                {
-                    Ellipse piece = new Ellipse();
-                    piece.Width = 20;
-                    piece.Height = 20;
-
-                    if (extraStatus[i].Item1 == 1)
-                        piece.Fill = Brushes.White;
-                    else
-                        piece.Fill = Brushes.Black;
-
-                    stackPanel.Children.Add(piece);
-                }
+                var collection = EllipseCollections[i];
+                
+                collection.Clear();
+                foreach((int color, int amount) in extraStatus)
+                    for(int j = 0; i < amount; ++i)
+                    {
+                        var ellipse = new EllipseModel(DiceSize, color);
+                        collection.Add(ellipse);
+                    }
             }
-            ///надо колдовать через биндинг
         }
 
-        protected void UnloadPageHandler(object sender, RoutedEventArgs e)
-        {
-            Task.Run(() => _client.Disconnect());
-        }
+        public async Task LeavePageHandler()
+            =>  await Task.Run(() => _client.Disconnect());
     }
 }

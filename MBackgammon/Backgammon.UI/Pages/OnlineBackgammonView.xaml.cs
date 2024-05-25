@@ -11,4 +11,9 @@ public partial class OnlineBackgammonView : ContentPage
         _viewModel = viewModel;
         BindingContext = _viewModel;
     }
+    protected override void OnDisappearing()
+    {
+        Task.Run(() =>_viewModel.LeavePageHandler());
+    }
+
 }
