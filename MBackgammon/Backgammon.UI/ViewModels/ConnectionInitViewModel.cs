@@ -1,6 +1,9 @@
 ﻿using Backgammon.Client.Abstractions;
+using Backgammon.UI.Services.Abstractions;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using System.Diagnostics;
+using System.Reflection.PortableExecutable;
 
 
 namespace Backgammon.UI.ViewModels
@@ -8,6 +11,8 @@ namespace Backgammon.UI.ViewModels
     public partial class ConnectionInitViewModel : ObservableObject
     {
         IGameClient _client;
+        INavigationService _navigationService;
+        bool _connectionSucceseed;
 
         [ObservableProperty]
         string _roomName;
@@ -45,8 +50,9 @@ namespace Backgammon.UI.ViewModels
         public delegate void ResponseDelegate(object sender, string message, string header);
         public event ResponseDelegate ResponseEvent;
 
-        public ConnectionInitViewModel(IGameClient client)
+        public ConnectionInitViewModel(IGameClient client, INavigationService navigationService)
         {
+            _navigationService = navigationService;
             _client = client;
             _client.SetURL("https://localhost:7250/game");
             _client.ConnectionStatusEvent += ConnectionStatusHandler;
@@ -60,8 +66,11 @@ namespace Backgammon.UI.ViewModels
             JoinButtonActive = false;
             ResponseMessage = "response message";
         }
-        private void ConnectionStatusHandler(object sender, string message)
-            =>  ResponseEvent?.Invoke(this, message, "Попытка подключения к серверу");
+        private void ConnectionStatusHandler(object sender, bool succeeded, string message)
+        { 
+            ResponseEvent?.Invoke(this, message, "Попытка подключения к серверу");
+            _connectionSucceseed = succeeded;
+        }
         private void CreateResponseHandler(object sender, bool successFlag, string message)
             => ResponseEvent?.Invoke(this, message, "Попытка создания комнаты");
         private void JoinResponseHandler(object sender, bool successFlag, string message)
@@ -97,18 +106,34 @@ namespace Backgammon.UI.ViewModels
 
         private async Task ConfirmCreateButtonСlickedHandler()
         {
-            if (!string.IsNullOrEmpty(RoomName))
-                await _client.CreateRoom(RoomName);
+            if(_connectionSucceseed)
+            {
+                if (!string.IsNullOrEmpty(RoomName))
+                    await _client.CreateRoom(RoomName);
+            }
+            else
+            {
+                ResponseEvent?.Invoke(this, "Отсутствует подключение к серверу. " +
+                    "Проверьте подключение к интернету и попробуйте снова", "Соединение с сервером");
+            }
         }
 
         private async Task ConfirmJoinButtonСlickedHandler()
         {
-            if (!string.IsNullOrEmpty(RoomName))
-                await _client.JoinRoom(RoomName);
+            if (_connectionSucceseed)
+            {
+                if (!string.IsNullOrEmpty(RoomName))
+                    await _client.JoinRoom(RoomName);
+            }
+            else
+            {
+                ResponseEvent?.Invoke(this, "Отсутствует подключение к серверу. " +
+                    "Проверьте подключение к интернету и попробуйте снова", "Соединение с сервером");
+            }
         }
-        private async static void RoomCompleteHandler(object? sender, EventArgs e)
+        private async void RoomCompleteHandler(object? sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("online_game");
+            await _navigationService.NavigateToAsync("online_game");
         }
 
     }

@@ -5,12 +5,15 @@ using Backgammon.Client.Abstractions;
 using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.ComponentModel;
 using System.Collections.ObjectModel;
+using System.Drawing;
+using Backgammon.UI.Services.Abstractions;
 
 namespace Backgammon.UI.ViewModels
 {
     public partial class OnlineBackgammonViewModel : ObservableObject
     {
         IGameClient _client;
+        INavigationService _navigationService;
         MoveVerifier _moveVerifier;
 
         int _firstPosition = -1;
@@ -51,19 +54,25 @@ namespace Backgammon.UI.ViewModels
         [RelayCommand]
         async Task CancelChoiсe() => await CancelChoiсeHandler();
 
-        public OnlineBackgammonViewModel(IGameClient client)
+        public OnlineBackgammonViewModel(IGameClient client, INavigationService navigationService)
         {
+            _navigationService = navigationService;
             ThrowEnabled = false;
             FieldEnabled = false;
             MoveColor = 0;
             WhiteScore = -1;
             BlackScore = -1;
+            DiceSize = 20;
             _client = client;
             _client.ColorResponse += ReceiveColorHandler;
             _client.ReceiveGameStatusEvent += ReceiveGameDataHandler;
             _client.EndGame += EndGameHandler;
+
+            EllipseCollections = new ObservableCollection<ObservableCollection<EllipseModel>>();
+            Task.Run(async () => await _client.RequestColor());
         }
 
+        
         private async Task PositionSelectedHandler(string stringPositionIndex)
         {
             int selectedCellIndex = int.Parse(stringPositionIndex);
@@ -101,6 +110,7 @@ namespace Backgammon.UI.ViewModels
             WhiteScore = data.Score.Item1;
             BlackScore = data.Score.Item2;
             MoveColor = data.MoveColor;
+            FieldEnabled = _moveVerifier.Color == MoveColor;
         }
 
         public void EndGameHandler(object sender, EventArgs e)
@@ -110,21 +120,37 @@ namespace Backgammon.UI.ViewModels
 
         void RefreshField(List<(int, int)> extraStatus)
         {
-            for(int i = 0; i < 24; ++i)
+            EllipseCollections.Clear();
+            foreach ((int color, int amount) in extraStatus)
             {
-                var collection = EllipseCollections[i];
-                
-                collection.Clear();
-                foreach((int color, int amount) in extraStatus)
-                    for(int j = 0; i < amount; ++i)
-                    {
-                        var ellipse = new EllipseModel(DiceSize, color);
-                        collection.Add(ellipse);
-                    }
+                var collection = new ObservableCollection<EllipseModel>();
+                for (int i = 0; i < amount; ++i)
+                {
+                    var ellipse = new EllipseModel(DiceSize, color);
+                    collection.Add(ellipse);
+                }
+                EllipseCollections.Add(collection);
             }
         }
 
         public async Task LeavePageHandler()
             =>  await Task.Run(() => _client.Disconnect());
+    }
+
+    public partial class EllipseModel : ObservableObject
+    {
+        public EllipseModel(double radius, int color)
+        {
+            Width = radius;
+            Height = radius;
+            Color = color == 1 ? Microsoft.Maui.Graphics.Colors.White : Microsoft.Maui.Graphics.Colors.Black;
+        }
+
+        [ObservableProperty]
+        double _width;
+        [ObservableProperty]
+        double _height;
+        [ObservableProperty]
+        Microsoft.Maui.Graphics.Color _color;
     }
 }

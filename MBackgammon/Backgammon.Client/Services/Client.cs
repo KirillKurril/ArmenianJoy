@@ -13,7 +13,7 @@ namespace Backgammon.Client.Services
 
         public delegate void ReceiveGameStatusDelegate(object sender, GameStatusData data);
         public delegate void CreateRoomResponseDelegate(object sender, bool answer, string message);
-        public delegate void ConnectionStatusDelegate(object sender, string status);
+        public delegate void ConnectionStatusDelegate(object sender, bool succeeded, string status);
 
         public event IGameClient.ReceiveGameStatusDelegate ReceiveGameStatusEvent;
         public event IGameClient.CreateRoomResponseDelegate CreateRoomResponseEvent;
@@ -35,14 +35,14 @@ namespace Backgammon.Client.Services
             {
                 await hubConnection.StartAsync();
                 if (hubConnection.State == HubConnectionState.Connected)
-                    ConnectionStatusEvent?.Invoke(this, "Подключение выполнено успешно");
+                    ConnectionStatusEvent?.Invoke(this, true, "Подключение выполнено успешно");
                 else
-                    ConnectionStatusEvent?.Invoke(this, "Неизвестная ошибка подключения\n" +
+                    ConnectionStatusEvent?.Invoke(this, false, "Неизвестная ошибка подключения\n" +
                         "Проверьте подключение к интернету и попробуйте ещё раз");
             }
             catch (Exception ex)
             {
-                ConnectionStatusEvent?.Invoke(this, ex.Message);
+                ConnectionStatusEvent?.Invoke(this, false, ex.Message);
                 Console.WriteLine($"Connection error: {ex.Message}" +
                     $"\nПроверьте подключение к интернету и попробуйте ещё раз");
             }
@@ -55,7 +55,7 @@ namespace Backgammon.Client.Services
             hubConnection.On<string>("GameStatusHandler", (amongus) =>
             {
                 var data = JsonConvert.DeserializeObject<GameStatusData>(amongus);
-                File.WriteAllText("test.txt", data.ToString());
+                //File.WriteAllText("test.txt", data.ToString());
                 ReceiveGameStatusEvent?.Invoke(this, data);
 
             });
@@ -63,7 +63,7 @@ namespace Backgammon.Client.Services
             hubConnection.On<string>("ReceiveGameStatus", (json) =>
             {
                 var data = JsonConvert.DeserializeObject<GameStatusData>(json);
-                File.WriteAllText("test0.txt", data.ToString());
+                //File.WriteAllText("test0.txt", data.ToString());
                 ReceiveGameStatusEvent?.Invoke(this, data);
             });
 

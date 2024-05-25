@@ -13,7 +13,7 @@ public partial class OnlineBackgammonView : ContentPage
     }
     protected override void OnDisappearing()
     {
-        Task.Run(() =>_viewModel.LeavePageHandler());
+        //Task.Run(() =>_viewModel.LeavePageHandler());
     }
 
 }

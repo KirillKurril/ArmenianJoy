@@ -57,6 +57,9 @@
 		<MauiImage Update="Resources\Images\field.png">
 		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</MauiImage>
+		<MauiImage Update="Resources\Images\icon.ico">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</MauiImage>
 		<MauiImage Update="Resources\Images\menu.png">
 		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</MauiImage>
@@ -76,6 +79,12 @@
 		<None Remove="Resources\Images\dices\4.png" />
 		<None Remove="Resources\Images\dices\5.png" />
 		<None Remove="Resources\Images\dices\6.png" />
+		<None Remove="Resources\Images\dices\dice1.png" />
+		<None Remove="Resources\Images\dices\dice2.png" />
+		<None Remove="Resources\Images\dices\dice3.png" />
+		<None Remove="Resources\Images\dices\dice4.png" />
+		<None Remove="Resources\Images\dices\dice5.png" />
+		<None Remove="Resources\Images\dices\dice6.png" />
 		<None Remove="Resources\Images\empty_field.png" />
 		<None Remove="Resources\Images\field.png" />
 		<None Remove="Resources\Images\icon.ico" />
@@ -83,22 +92,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiImage Include="Resources\Images\dices\1.png">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </MauiImage>
-	  <MauiImage Include="Resources\Images\dices\2.png">
+	  <MauiImage Include="Resources\Images\dices\dice2.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </MauiImage>
-	  <MauiImage Include="Resources\Images\dices\3.png">
+	  <MauiImage Include="Resources\Images\dices\dice3.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </MauiImage>
-	  <MauiImage Include="Resources\Images\dices\4.png">
+	  <MauiImage Include="Resources\Images\dices\dice4.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </MauiImage>
-	  <MauiImage Include="Resources\Images\dices\5.png">
+	  <MauiImage Include="Resources\Images\dices\dice5.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </MauiImage>
-	  <MauiImage Include="Resources\Images\dices\6.png">
+	  <MauiImage Include="Resources\Images\dices\dice6.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </MauiImage>
 	</ItemGroup>
@@ -140,6 +146,12 @@
 
 	<ItemGroup>
 	  <Folder Include="Commands\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Include="Resources\Images\dices\dice1.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </MauiImage>
 	</ItemGroup>
 
 </Project>

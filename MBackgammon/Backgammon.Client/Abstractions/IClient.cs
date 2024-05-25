@@ -11,7 +11,7 @@ namespace Backgammon.Client.Abstractions
 
         delegate void ReceiveGameStatusDelegate(object sender, GameStatusData data);
         delegate void CreateRoomResponseDelegate(object sender, bool answer, string message);
-        delegate void ConnectionStatusDelegate(object sender, string status);
+        delegate void ConnectionStatusDelegate(object sender, bool succeeded, string status);
 
         event ReceiveGameStatusDelegate ReceiveGameStatusEvent;
         event CreateRoomResponseDelegate CreateRoomResponseEvent;

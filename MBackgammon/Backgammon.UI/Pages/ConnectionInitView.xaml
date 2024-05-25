@@ -7,13 +7,35 @@
              xmlns:models="clr-namespace:Backgammon.UI.ViewModels"
              xmlns:converters="clr-namespace:Backgammon.UI.Converters"
              x:DataType="models:ConnectionInitViewModel"             
-             Title="ConnectionInitView">
+             BackgroundImageSource="empty_field.png">
     
     <ContentPage.Resources>
         <converters:ReverseEnabledConverter x:Key="ReverseEnabledConverter"/>
+        <ResourceDictionary>
+            <Style x:Key="DialogButton" TargetType="Button">
+                <Setter Property="Background" Value="#491c0c"/>
+                <Setter Property="TextColor" Value="#ecd4a6"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="Margin" Value="1"/>
+                <Setter Property="BorderWidth" Value="2"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="BorderColor" Value="#2c1107"/>
+                <Setter Property="CornerRadius" Value="10"/>
+            </Style>
+            <Style x:Key="RoomName" TargetType="Entry">
+                <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="TextColor" Value="#2c1107"/>
+                <Setter Property="FontSize" Value="35"/>
+                <Setter Property="Text" Value="Введите имя комнаты"/>
+                <Setter Property="MaxLength" Value="30"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="IsSpellCheckEnabled" Value="False"/>
+            </Style>
+        </ResourceDictionary>
     </ContentPage.Resources>
 
     <Grid>
+        <Image Grid.Row="1" Grid.Column="1" Source="dialog_window.png" Aspect="Fill"/>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.5*"/>
             <RowDefinition/>
@@ -24,8 +46,7 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="0.5*"/>
         </Grid.ColumnDefinitions>
-        <Grid Grid.Row="1"
-              Grid.Column="1">
+        <Grid Grid.Row="1" Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="0.17*"/>
                 <RowDefinition/>
@@ -50,48 +71,55 @@
                     IsVisible="{Binding JoinOrCreateActive}"
                     IsEnabled="{Binding JoinOrCreateActive}"
                     Command="{Binding CreateButtonСlickedCommand}"
+                    Style="{StaticResource DialogButton}"
                       Text="Создать комнату"
                       Grid.Row="0"
                       Grid.ColumnSpan="2"
                       Margin="10,10,10,10"/>
-                <Button 
+                <Button
                     IsVisible="{Binding JoinOrCreateActive}"
                     IsEnabled="{Binding JoinOrCreateActive}"
                     Command="{Binding JoinButtonСlickedCommand}"
+                    Style="{StaticResource DialogButton}"
                       Text="Присоединиться к комнате"
                       Grid.Row="1"
                       Grid.ColumnSpan="2"
-                      Margin="10,10,10,10"/>
+                      Margin="10,10,10,10"/>    
                 <Entry 
-                    Text="{Binding RoomName}"
-                      IsVisible="{Binding JoinOrCreateActive, Converter={StaticResource ReverseEnabledConverter}}"
-                      IsEnabled="{Binding JoinOrCreateActive, Converter={StaticResource ReverseEnabledConverter}}"
-                      Grid.Row="0"
-                      MaxLength="16"/>
+                        Text="{Binding RoomName}"
+                        IsVisible="{Binding JoinOrCreateActive, Converter={StaticResource ReverseEnabledConverter}}"
+                        IsEnabled="{Binding JoinOrCreateActive, Converter={StaticResource ReverseEnabledConverter}}"
+                        Style="{StaticResource RoomName}"
+                        Grid.ColumnSpan="2"
+                        Grid.Row="0"/>
+                
                 <Button
                     IsVisible="{Binding CreateButtonActive}"
                     IsEnabled="{Binding CreateButtonActive}"
                     Command="{Binding ConfirmCreateButtonСlickedCommand}"
-                      Text="Подтвердить"
+                    Style="{StaticResource DialogButton}"
+                    Text="Подтвердить"
                     Grid.Row="1"
-                      Grid.ColumnSpan="2"
-                      Margin="10,10,10,10"/>
+                    Grid.ColumnSpan="2"
+                    Margin="10,10,10,10"/>
                 <Button
                     IsVisible="{Binding JoinButtonActive}"
                     IsEnabled="{Binding JoinButtonActive}"
                     Command="{Binding ConfirmJoinButtonСlickedCommand}"
+                    Style="{StaticResource DialogButton}"
                     Grid.Row="1"
                     Text="Подтвердить"
-                      Grid.ColumnSpan="2"
-                      Margin="10,10,10,10"/>
+                    Grid.ColumnSpan="2"
+                    Margin="10,10,10,10"/>
                 <Button
                     Text="Я передумал"
                     IsVisible="{Binding JoinOrCreateActive, Converter={StaticResource ReverseEnabledConverter}}"
                     IsEnabled="{Binding JoinOrCreateActive, Converter={StaticResource ReverseEnabledConverter}}"
+                    Style="{StaticResource DialogButton}"
                     Command="{Binding BackButtonСlickedCommand}"
-                      Grid.Row="2"
-                      Margin="10,10,10,0"
-                      Grid.ColumnSpan="2"/>
+                    Grid.Row="2"
+                    Margin="10,10,10,0"
+                    Grid.ColumnSpan="2"/>
             </Grid>
         </Grid>
     </Grid>

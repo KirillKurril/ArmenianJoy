@@ -5,10 +5,26 @@
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              xmlns:entities="clr-namespace:Entities.Models;assembly=Entities"
              xmlns:models="clr-namespace:Backgammon.UI.ViewModels"
-             x:DataType="models:MenuViewModel"
-             Title="Menu">
-    <Grid>
+             x:DataType="models:MenuViewModel">
 
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="DialogButton" TargetType="Button">
+                <Setter Property="Background" Value="#491c0c"/>
+                <Setter Property="TextColor" Value="#ecd4a6"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="Margin" Value="1"/>
+                <Setter Property="BorderWidth" Value="2"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="BorderColor" Value="#2c1107"/>
+                <Setter Property="CornerRadius" Value="10"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <Grid>
+        <Image Source="menu.png" Aspect="Fill"/>
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="0.6*"/>
@@ -30,13 +46,17 @@
             </Grid.RowDefinitions>
             <Button Grid.Row="0"
                     Text="Нарды" 
-                    Command="{Binding GoToOfflineGameCommand}"/>
+                    Command="{Binding GoToOfflineGameCommand}"
+                    Style="{StaticResource DialogButton}"/>
             <Button Grid.Row="2" 
                     Text="Анекдоты"
-                    Command="{Binding GoToAnecdotesCommand}"/>
+                    Command="{Binding GoToAnecdotesCommand}"
+                    Style="{StaticResource DialogButton}"/>
             <Button Grid.Row="4" 
                     Text="Киндзмараули" 
-                    Command="{Binding GoToConnectionPageCommand}"/>
+                    Command="{Binding GoToConnectionPageCommand}"
+                    Style="{StaticResource DialogButton}"/>
         </Grid>
+    </Grid>
     </Grid>
 </ContentPage>

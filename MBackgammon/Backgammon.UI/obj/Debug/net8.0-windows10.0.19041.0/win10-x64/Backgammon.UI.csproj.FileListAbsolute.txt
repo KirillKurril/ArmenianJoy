@@ -200,3 +200,9 @@ C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.
 C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Maui.dll
 C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Maui.Core.dll
 C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\System.Speech.dll
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dice1.scale-100.png
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dice2.scale-100.png
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dice3.scale-100.png
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dice4.scale-100.png
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dice5.scale-100.png
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dice6.scale-100.png

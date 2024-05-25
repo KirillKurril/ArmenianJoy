@@ -7,16 +7,23 @@
              xmlns:models="clr-namespace:Backgammon.UI.ViewModels"
              xmlns:converters="clr-namespace:Backgammon.UI.Converters"
              x:DataType="models:OnlineBackgammonViewModel"             
-             Title="OnlineBackgammonView"
-             Style="{StaticResource GamePageStyle}">
+             BackgroundImageSource="field.png">
 
         
         <ContentPage.Resources>
         <converters:MoveColorConverter x:Key="MoveColorConverter"/>
-        <ResourceDictionary Source="GameStyles.xaml" />
+        <ResourceDictionary>
+            <Style x:Key="GamePageStyle" TargetType="ContentPage">
+                <Setter Property="BackgroundImageSource" Value="Resources/Images/field.png" />
+            </Style>
+            <Style x:Key="PositionButtonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="BorderColor" Value="Transparent"/>
+            </Style>
+        </ResourceDictionary>
     </ContentPage.Resources>
 
-    <Grid>
+    <Grid IsEnabled="{Binding FieldEnabled}">
         <!--<Grid.InputBindings>
             <MouseBinding Gesture="RightClick" Command="{Binding RightClickCommand}" />
         </Grid.InputBindings>-->
@@ -109,96 +116,71 @@
 
 
                     <Button
-                    Grid.Row="0"
-                    Grid.Column="0"
-                    Style="{StaticResource PositionButtonStyle}"
-                    Command="{Binding PositionSelectedCommand}"
-                    CommandParameter="23"/>
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Style="{StaticResource PositionButtonStyle}"
+                        Command="{Binding PositionSelectedCommand}"
+                        CommandParameter="23"/>
 
                     <StackLayout Grid.Row="0"
-             Grid.Column="0"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[23]}">
-                        <BindableLayout.ItemTemplate>
-                            <DataTemplate>
-                                <Ellipse WidthRequest="{Binding Width}" HeightRequest="{Binding Height}" Fill="{Binding Color}" />
-                            </DataTemplate>
-                        </BindableLayout.ItemTemplate>
+                        Grid.Column="0"
+                        BindableLayout.ItemsSource="{Binding EllipseCollections[23]}">
                     </StackLayout>
 
 
 
                     <Button
-                    Grid.Row="0"
-                    Grid.Column="1"
-                    Style="{StaticResource PositionButtonStyle}"
-                    Command="{Binding PositionSelectedCommand}"
-                    CommandParameter="22"/>
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Style="{StaticResource PositionButtonStyle}"
+                        Command="{Binding PositionSelectedCommand}"
+                        CommandParameter="22"/>
 
                     <StackLayout Grid.Row="0"
-             Grid.Column="1"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[22]}">
-                        <BindableLayout.ItemTemplate>
-                            <DataTemplate>
-                                <Ellipse WidthRequest="{Binding Width}" HeightRequest="{Binding Height}" Fill="{Binding Color}" />
-                            </DataTemplate>
-                        </BindableLayout.ItemTemplate>
+                       Grid.Column="1"
+                        BindableLayout.ItemsSource="{Binding EllipseCollections[22]}">
                     </StackLayout>
 
 
 
                     <Button
-                    Grid.Row="0"
-                    Grid.Column="2"
-                    Style="{StaticResource PositionButtonStyle}"
-                    Command="{Binding PositionSelectedCommand}"
-                    CommandParameter="21"/>
+                        Grid.Row="0"
+                        Grid.Column="2"
+                        Style="{StaticResource PositionButtonStyle}"
+                        Command="{Binding PositionSelectedCommand}"
+                        CommandParameter="21"/>
 
                     <StackLayout Grid.Row="0"
-             Grid.Column="2"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[21]}">
-                        <BindableLayout.ItemTemplate>
-                            <DataTemplate>
-                                <Ellipse WidthRequest="{Binding Width}" HeightRequest="{Binding Height}" Fill="{Binding Color}" />
-                            </DataTemplate>
-                        </BindableLayout.ItemTemplate>
+                        Grid.Column="2"
+                        BindableLayout.ItemsSource="{Binding EllipseCollections[21]}">
                     </StackLayout>
 
 
 
                     <Button
-                    Grid.Row="0"
-                    Grid.Column="3"
-                    Style="{StaticResource PositionButtonStyle}"
-                    Command="{Binding PositionSelectedCommand}"
-                    CommandParameter="20"/>
+                        Grid.Row="0"
+                        Grid.Column="3"
+                        Style="{StaticResource PositionButtonStyle}"
+                        Command="{Binding PositionSelectedCommand}"
+                        CommandParameter="20"/>
 
                     <StackLayout Grid.Row="0"
-             Grid.Column="3"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[20]}">
-                        <BindableLayout.ItemTemplate>
-                            <DataTemplate>
-                                <Ellipse WidthRequest="{Binding Width}" HeightRequest="{Binding Height}" Fill="{Binding Color}" />
-                            </DataTemplate>
-                        </BindableLayout.ItemTemplate>
+                        Grid.Column="3"
+                        BindableLayout.ItemsSource="{Binding EllipseCollections[20]}">
                     </StackLayout>
 
 
 
                     <Button
-                    Grid.Row="0"
-                    Grid.Column="4"
-                    Style="{StaticResource PositionButtonStyle}"
-                    Command="{Binding PositionSelectedCommand}"
-                    CommandParameter="19"/>
+                        Grid.Row="0"
+                        Grid.Column="4"
+                        Style="{StaticResource PositionButtonStyle}"
+                        Command="{Binding PositionSelectedCommand}"
+                        CommandParameter="19"/>
 
                     <StackLayout Grid.Row="0"
-             Grid.Column="4"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[19]}">
-                        <BindableLayout.ItemTemplate>
-                            <DataTemplate>
-                                <Ellipse WidthRequest="{Binding Width}" HeightRequest="{Binding Height}" Fill="{Binding Color}" />
-                            </DataTemplate>
-                        </BindableLayout.ItemTemplate>
+                        Grid.Column="4"
+                        BindableLayout.ItemsSource="{Binding EllipseCollections[19]}">
                     </StackLayout>
 
 
@@ -213,11 +195,6 @@
                     <StackLayout Grid.Row="0"
              Grid.Column="5"
              BindableLayout.ItemsSource="{Binding EllipseCollections[18]}">
-                        <BindableLayout.ItemTemplate>
-                            <DataTemplate>
-                                <Ellipse WidthRequest="{Binding Width}" HeightRequest="{Binding Height}" Fill="{Binding Color}" />
-                            </DataTemplate>
-                        </BindableLayout.ItemTemplate>
                     </StackLayout>
 
 
@@ -232,11 +209,6 @@
                     <StackLayout Grid.Row="0"
              Grid.Column="6"
              BindableLayout.ItemsSource="{Binding EllipseCollections[17]}">
-                        <BindableLayout.ItemTemplate>
-                            <DataTemplate>
-                                <Ellipse WidthRequest="{Binding Width}" HeightRequest="{Binding Height}" Fill="{Binding Color}" />
-                            </DataTemplate>
-                        </BindableLayout.ItemTemplate>
                     </StackLayout>
 
 
@@ -251,11 +223,6 @@
                     <StackLayout Grid.Row="0"
              Grid.Column="7"
              BindableLayout.ItemsSource="{Binding EllipseCollections[16]}">
-                        <BindableLayout.ItemTemplate>
-                            <DataTemplate>
-                                <Ellipse WidthRequest="{Binding Width}" HeightRequest="{Binding Height}" Fill="{Binding Color}" />
-                            </DataTemplate>
-                        </BindableLayout.ItemTemplate>
                     </StackLayout>
 
 
@@ -270,11 +237,6 @@
                     <StackLayout Grid.Row="0"
              Grid.Column="8"
              BindableLayout.ItemsSource="{Binding EllipseCollections[15]}">
-                        <BindableLayout.ItemTemplate>
-                            <DataTemplate>
-                                <Ellipse WidthRequest="{Binding Width}" HeightRequest="{Binding Height}" Fill="{Binding Color}" />
-                            </DataTemplate>
-                        </BindableLayout.ItemTemplate>
                     </StackLayout>
 
 
@@ -289,11 +251,6 @@
                     <StackLayout Grid.Row="0"
              Grid.Column="9"
              BindableLayout.ItemsSource="{Binding EllipseCollections[14]}">
-                        <BindableLayout.ItemTemplate>
-                            <DataTemplate>
-                                <Ellipse WidthRequest="{Binding Width}" HeightRequest="{Binding Height}" Fill="{Binding Color}" />
-                            </DataTemplate>
-                        </BindableLayout.ItemTemplate>
                     </StackLayout>
 
 
@@ -308,11 +265,6 @@
                     <StackLayout Grid.Row="0"
              Grid.Column="10"
              BindableLayout.ItemsSource="{Binding EllipseCollections[13]}">
-                        <BindableLayout.ItemTemplate>
-                            <DataTemplate>
-                                <Ellipse WidthRequest="{Binding Width}" HeightRequest="{Binding Height}" Fill="{Binding Color}" />
-                            </DataTemplate>
-                        </BindableLayout.ItemTemplate>
                     </StackLayout>
 
 
@@ -327,11 +279,6 @@
                     <StackLayout Grid.Row="0"
              Grid.Column="11"
              BindableLayout.ItemsSource="{Binding EllipseCollections[12]}">
-                        <BindableLayout.ItemTemplate>
-                            <DataTemplate>
-                                <Ellipse WidthRequest="{Binding Width}" HeightRequest="{Binding Height}" Fill="{Binding Color}" />
-                            </DataTemplate>
-                        </BindableLayout.ItemTemplate>
                     </StackLayout>
 
 
@@ -346,11 +293,6 @@
                     <StackLayout Grid.Row="1"
              Grid.Column="0"
              BindableLayout.ItemsSource="{Binding EllipseCollections[0]}">
-                        <BindableLayout.ItemTemplate>
-                            <DataTemplate>
-                                <Ellipse WidthRequest="{Binding Width}" HeightRequest="{Binding Height}" Fill="{Binding Color}" />
-                            </DataTemplate>
-                        </BindableLayout.ItemTemplate>
                     </StackLayout>
 
 
@@ -365,11 +307,6 @@
                     <StackLayout Grid.Row="1"
              Grid.Column="1"
              BindableLayout.ItemsSource="{Binding EllipseCollections[1]}">
-                        <BindableLayout.ItemTemplate>
-                            <DataTemplate>
-                                <Ellipse WidthRequest="{Binding Width}" HeightRequest="{Binding Height}" Fill="{Binding Color}" />
-                            </DataTemplate>
-                        </BindableLayout.ItemTemplate>
                     </StackLayout>
 
 
@@ -384,11 +321,6 @@
                     <StackLayout Grid.Row="1"
              Grid.Column="2"
              BindableLayout.ItemsSource="{Binding EllipseCollections[2]}">
-                        <BindableLayout.ItemTemplate>
-                            <DataTemplate>
-                                <Ellipse WidthRequest="{Binding Width}" HeightRequest="{Binding Height}" Fill="{Binding Color}" />
-                            </DataTemplate>
-                        </BindableLayout.ItemTemplate>
                     </StackLayout>
 
 
@@ -403,11 +335,6 @@
                     <StackLayout Grid.Row="1"
              Grid.Column="3"
              BindableLayout.ItemsSource="{Binding EllipseCollections[3]}">
-                        <BindableLayout.ItemTemplate>
-                            <DataTemplate>
-                                <Ellipse WidthRequest="{Binding Width}" HeightRequest="{Binding Height}" Fill="{Binding Color}" />
-                            </DataTemplate>
-                        </BindableLayout.ItemTemplate>
                     </StackLayout>
 
 
@@ -422,11 +349,6 @@
                     <StackLayout Grid.Row="1"
              Grid.Column="4"
              BindableLayout.ItemsSource="{Binding EllipseCollections[4]}">
-                        <BindableLayout.ItemTemplate>
-                            <DataTemplate>
-                                <Ellipse WidthRequest="{Binding Width}" HeightRequest="{Binding Height}" Fill="{Binding Color}" />
-                            </DataTemplate>
-                        </BindableLayout.ItemTemplate>
                     </StackLayout>
 
 
@@ -441,11 +363,6 @@
                     <StackLayout Grid.Row="1"
              Grid.Column="5"
              BindableLayout.ItemsSource="{Binding EllipseCollections[5]}">
-                        <BindableLayout.ItemTemplate>
-                            <DataTemplate>
-                                <Ellipse WidthRequest="{Binding Width}" HeightRequest="{Binding Height}" Fill="{Binding Color}" />
-                            </DataTemplate>
-                        </BindableLayout.ItemTemplate>
                     </StackLayout>
 
 
@@ -460,11 +377,6 @@
                     <StackLayout Grid.Row="1"
              Grid.Column="6"
              BindableLayout.ItemsSource="{Binding EllipseCollections[6]}">
-                        <BindableLayout.ItemTemplate>
-                            <DataTemplate>
-                                <Ellipse WidthRequest="{Binding Width}" HeightRequest="{Binding Height}" Fill="{Binding Color}" />
-                            </DataTemplate>
-                        </BindableLayout.ItemTemplate>
                     </StackLayout>
 
 
@@ -479,11 +391,6 @@
                     <StackLayout Grid.Row="1"
              Grid.Column="7"
              BindableLayout.ItemsSource="{Binding EllipseCollections[7]}">
-                        <BindableLayout.ItemTemplate>
-                            <DataTemplate>
-                                <Ellipse WidthRequest="{Binding Width}" HeightRequest="{Binding Height}" Fill="{Binding Color}" />
-                            </DataTemplate>
-                        </BindableLayout.ItemTemplate>
                     </StackLayout>
 
 
@@ -498,11 +405,6 @@
                     <StackLayout Grid.Row="1"
              Grid.Column="8"
              BindableLayout.ItemsSource="{Binding EllipseCollections[8]}">
-                        <BindableLayout.ItemTemplate>
-                            <DataTemplate>
-                                <Ellipse WidthRequest="{Binding Width}" HeightRequest="{Binding Height}" Fill="{Binding Color}" />
-                            </DataTemplate>
-                        </BindableLayout.ItemTemplate>
                     </StackLayout>
 
 
@@ -517,11 +419,6 @@
                     <StackLayout Grid.Row="1"
              Grid.Column="9"
              BindableLayout.ItemsSource="{Binding EllipseCollections[9]}">
-                        <BindableLayout.ItemTemplate>
-                            <DataTemplate>
-                                <Ellipse WidthRequest="{Binding Width}" HeightRequest="{Binding Height}" Fill="{Binding Color}" />
-                            </DataTemplate>
-                        </BindableLayout.ItemTemplate>
                     </StackLayout>
 
 
@@ -536,11 +433,6 @@
                     <StackLayout Grid.Row="1"
              Grid.Column="10"
              BindableLayout.ItemsSource="{Binding EllipseCollections[10]}">
-                        <BindableLayout.ItemTemplate>
-                            <DataTemplate>
-                                <Ellipse WidthRequest="{Binding Width}" HeightRequest="{Binding Height}" Fill="{Binding Color}" />
-                            </DataTemplate>
-                        </BindableLayout.ItemTemplate>
                     </StackLayout>
 
 
@@ -555,11 +447,6 @@
                     <StackLayout Grid.Row="1"
              Grid.Column="11"
              BindableLayout.ItemsSource="{Binding EllipseCollections[11]}">
-                        <BindableLayout.ItemTemplate>
-                            <DataTemplate>
-                                <Ellipse WidthRequest="{Binding Width}" HeightRequest="{Binding Height}" Fill="{Binding Color}" />
-                            </DataTemplate>
-                        </BindableLayout.ItemTemplate>
                     </StackLayout>
                 </Grid>
             </Grid>

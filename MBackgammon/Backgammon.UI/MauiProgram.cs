@@ -1,5 +1,7 @@
 ﻿using Backgammon.UI.Pages;
 using Backgammon.UI.ViewModels;
+using Backgammon.UI.Services.Services;
+using Backgammon.UI.Services.Abstractions;
 using Microsoft.Extensions.Logging;
 using CommunityToolkit.Maui;
 using Backgammon.Client.Abstractions;
@@ -21,7 +23,7 @@ namespace Backgammon.UI
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
             builder.Services
-                .RegisterClient()
+                .RegisterServices()
                 .RegisterPages()
                 .RegisterViewModels();
 
@@ -52,9 +54,10 @@ namespace Backgammon.UI
             services.AddTransient<SettingsViewModel>();
             return services;
         }
-        static IServiceCollection RegisterClient(this IServiceCollection services)
+        static IServiceCollection RegisterServices(this IServiceCollection services)
         {
             services.AddSingleton<IGameClient, GameClient> ();
+            services.AddSingleton<INavigationService, NavigationService>();
             return services;
         }
     }
