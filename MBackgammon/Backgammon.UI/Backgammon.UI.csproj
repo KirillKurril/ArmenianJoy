@@ -47,7 +47,19 @@
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
+		<MauiImage Update="Resources\Images\dialog_window.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</MauiImage>
 		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
+		<MauiImage Update="Resources\Images\empty_field.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\field.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</MauiImage>
+		<MauiImage Update="Resources\Images\menu.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</MauiImage>
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -58,10 +70,37 @@
 
 	<ItemGroup>
 		<None Remove="Resources\Images\dialog_window.png" />
+		<None Remove="Resources\Images\dices\1.png" />
+		<None Remove="Resources\Images\dices\2.png" />
+		<None Remove="Resources\Images\dices\3.png" />
+		<None Remove="Resources\Images\dices\4.png" />
+		<None Remove="Resources\Images\dices\5.png" />
+		<None Remove="Resources\Images\dices\6.png" />
 		<None Remove="Resources\Images\empty_field.png" />
 		<None Remove="Resources\Images\field.png" />
 		<None Remove="Resources\Images\icon.ico" />
 		<None Remove="Resources\Images\menu.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Include="Resources\Images\dices\1.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </MauiImage>
+	  <MauiImage Include="Resources\Images\dices\2.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </MauiImage>
+	  <MauiImage Include="Resources\Images\dices\3.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </MauiImage>
+	  <MauiImage Include="Resources\Images\dices\4.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </MauiImage>
+	  <MauiImage Include="Resources\Images\dices\5.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </MauiImage>
+	  <MauiImage Include="Resources\Images\dices\6.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </MauiImage>
 	</ItemGroup>
 
 	<ItemGroup>

@@ -70,11 +70,35 @@ build_metadata.AdditionalFiles.ManifestResourceName = Backgammon.UI.Pages.Settin
 build_metadata.AdditionalFiles.TargetPath = Pages\SettingsView.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\SettingsView.xaml
 
+[C:/Uni/ArmenianJoy/MBackgammon/Backgammon.UI/Resources/Styles/AnecdotesStyles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Backgammon.UI.Resources.Styles.AnecdotesStyles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\AnecdotesStyles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\AnecdotesStyles.xaml
+
 [C:/Uni/ArmenianJoy/MBackgammon/Backgammon.UI/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Backgammon.UI.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Uni/ArmenianJoy/MBackgammon/Backgammon.UI/Resources/Styles/ConnectionInitStyles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Backgammon.UI.Resources.Styles.ConnectionInitStyles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\ConnectionInitStyles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\ConnectionInitStyles.xaml
+
+[C:/Uni/ArmenianJoy/MBackgammon/Backgammon.UI/Resources/Styles/GameStyles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Backgammon.UI.Resources.Styles.GameStyles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\GameStyles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\GameStyles.xaml
+
+[C:/Uni/ArmenianJoy/MBackgammon/Backgammon.UI/Resources/Styles/MenuStyles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Backgammon.UI.Resources.Styles.MenuStyles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\MenuStyles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\MenuStyles.xaml
 
 [C:/Uni/ArmenianJoy/MBackgammon/Backgammon.UI/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

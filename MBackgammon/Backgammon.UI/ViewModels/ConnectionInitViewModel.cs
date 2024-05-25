@@ -52,6 +52,7 @@ namespace Backgammon.UI.ViewModels
             _client.ConnectionStatusEvent += ConnectionStatusHandler;
             _client.CreateRoomResponseEvent += CreateResponseHandler;
             _client.JoinRoomResponseEvent += JoinResponseHandler;
+            _client.RoomCompleted += RoomCompleteHandler;
             Task.Run(() => _client.Connect());
 
             JoinOrCreateActive = true;
@@ -65,11 +66,6 @@ namespace Backgammon.UI.ViewModels
             => ResponseEvent?.Invoke(this, message, "Попытка создания комнаты");
         private void JoinResponseHandler(object sender, bool successFlag, string message)
             => ResponseEvent?.Invoke(this, message, "Попытка присоединения к комнате");
-
-        private async void RoomConnectionHandler(object sender, bool answer, string message)
-        {
-            //await Task.Run(() => ConnectionResponseReceived(message));
-        }
 
         private async Task CreateButtonСlickedHandler()
         {
@@ -110,7 +106,10 @@ namespace Backgammon.UI.ViewModels
             if (!string.IsNullOrEmpty(RoomName))
                 await _client.JoinRoom(RoomName);
         }
-
+        private async static void RoomCompleteHandler(object? sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("online_game");
+        }
 
     }
 }
