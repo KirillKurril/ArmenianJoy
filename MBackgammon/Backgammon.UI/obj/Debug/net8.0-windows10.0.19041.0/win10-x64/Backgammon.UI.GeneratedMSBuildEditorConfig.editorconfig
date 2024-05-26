@@ -66,6 +66,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Backgammon.UI.Pages.Settin
 build_metadata.AdditionalFiles.TargetPath = Pages\SettingsView.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\SettingsView.xaml
 
+[C:/Uni/ArmenianJoy/MBackgammon/Backgammon.UI/Pages/TESTPAGE.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Backgammon.UI.Pages.TESTPAGE.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\TESTPAGE.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\TESTPAGE.xaml
+
 [C:/Uni/ArmenianJoy/MBackgammon/Backgammon.UI/Resources/Styles/AnecdotesStyles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Backgammon.UI.Resources.Styles.AnecdotesStyles.xaml

@@ -322,3 +322,9 @@ C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-maccatalyst\maccat
 C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ref\Backgammon.UI.dll
 C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Maui.dll
 C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Maui.Core.dll
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\dice6.png
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\dice4.png
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\dice1.png
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\dice2.png
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\dice3.png
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\dice5.png

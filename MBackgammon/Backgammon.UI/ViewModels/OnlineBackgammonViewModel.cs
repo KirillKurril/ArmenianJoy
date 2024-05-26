@@ -25,7 +25,7 @@ namespace Backgammon.UI.ViewModels
         bool _fieldEnabled;
 
         [ObservableProperty]
-        int _diceSize;
+        double _diceSize;
 
         [ObservableProperty]
         int _whiteScore;    
@@ -45,7 +45,7 @@ namespace Backgammon.UI.ViewModels
         [ObservableProperty]
         int _moveColor;     
 
-        public ObservableCollection<ObservableCollection<EllipseModel>> EllipseCollections { get; }
+        public ObservableCollection<ObservableCollection<Ellipse>> EllipseCollections { get; set; }
 
         [RelayCommand]
         async Task PositionSelected(string stringPositionIndex)
@@ -58,7 +58,7 @@ namespace Backgammon.UI.ViewModels
         {
             _navigationService = navigationService;
             ThrowEnabled = false;
-            FieldEnabled = false;
+            FieldEnabled = true;
             MoveColor = 0;
             WhiteScore = -1;
             BlackScore = -1;
@@ -68,7 +68,7 @@ namespace Backgammon.UI.ViewModels
             _client.ReceiveGameStatusEvent += ReceiveGameDataHandler;
             _client.EndGame += EndGameHandler;
 
-            EllipseCollections = new ObservableCollection<ObservableCollection<EllipseModel>>();
+            EllipseCollections = new ObservableCollection<ObservableCollection<Ellipse>>();
             Task.Run(async () => await _client.RequestColor());
         }
 
@@ -123,10 +123,15 @@ namespace Backgammon.UI.ViewModels
             EllipseCollections.Clear();
             foreach ((int color, int amount) in extraStatus)
             {
-                var collection = new ObservableCollection<EllipseModel>();
+                var collection = new ObservableCollection<Ellipse>();
                 for (int i = 0; i < amount; ++i)
                 {
-                    var ellipse = new EllipseModel(DiceSize, color);
+                    Ellipse ellipse = new Ellipse
+                    {
+                        WidthRequest = DiceSize,
+                        HeightRequest = DiceSize,
+                        Fill = color == Entities.Models.Colors.White ? Brush.White : Brush.Black
+                    };
                     collection.Add(ellipse);
                 }
                 EllipseCollections.Add(collection);
@@ -137,20 +142,4 @@ namespace Backgammon.UI.ViewModels
             =>  await Task.Run(() => _client.Disconnect());
     }
 
-    public partial class EllipseModel : ObservableObject
-    {
-        public EllipseModel(double radius, int color)
-        {
-            Width = radius;
-            Height = radius;
-            Color = color == 1 ? Microsoft.Maui.Graphics.Colors.White : Microsoft.Maui.Graphics.Colors.Black;
-        }
-
-        [ObservableProperty]
-        double _width;
-        [ObservableProperty]
-        double _height;
-        [ObservableProperty]
-        Microsoft.Maui.Graphics.Color _color;
-    }
 }

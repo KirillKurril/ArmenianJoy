@@ -5,12 +5,13 @@
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              xmlns:entities="clr-namespace:Entities.Models;assembly=Entities"
              xmlns:models="clr-namespace:Backgammon.UI.ViewModels"
+             xmlns:tselectors="clr-namespace:Backgammon.UI.Selectors"
              xmlns:converters="clr-namespace:Backgammon.UI.Converters"
              x:DataType="models:OnlineBackgammonViewModel"             
              BackgroundImageSource="field.png">
 
         
-        <ContentPage.Resources>
+    <ContentPage.Resources>
         <converters:MoveColorConverter x:Key="MoveColorConverter"/>
         <ResourceDictionary>
             <Style x:Key="GamePageStyle" TargetType="ContentPage">
@@ -19,14 +20,33 @@
             <Style x:Key="PositionButtonStyle" TargetType="Button">
                 <Setter Property="BackgroundColor" Value="Transparent"/>
                 <Setter Property="BorderColor" Value="Transparent"/>
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup>
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="Transparent" />
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="PointerOver">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="Goldenrod" />
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="Pressed">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="LightYellow" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
             </Style>
+            <tselectors:EllipseTemplateSelector x:Key="EllipseSelector" />
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <Grid IsEnabled="{Binding FieldEnabled}">
-        <!--<Grid.InputBindings>
-            <MouseBinding Gesture="RightClick" Command="{Binding RightClickCommand}" />
-        </Grid.InputBindings>-->
+    <Grid >
         <Grid.RowDefinitions>
             <RowDefinition Height="0.04*"/>
             <RowDefinition Height="*"/>
@@ -86,7 +106,6 @@
                 <Button x:Name="Throw"
                 Grid.Column="2"
                 Text="Выбросить"
-                Height="20"
                 IsVisible="{Binding ThrowButtonIsActive}"
                 IsEnabled="{Binding ThrowButtonIsActive}"
                 Command="{Binding PositionSelectedCommand}"
@@ -114,7 +133,6 @@
                     </Grid.ColumnDefinitions>
 
 
-
                     <Button
                         Grid.Row="0"
                         Grid.Column="0"
@@ -124,7 +142,8 @@
 
                     <StackLayout Grid.Row="0"
                         Grid.Column="0"
-                        BindableLayout.ItemsSource="{Binding EllipseCollections[23]}">
+                        BindableLayout.ItemsSource="{Binding EllipseCollections[23]}"
+                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
                     </StackLayout>
 
 
@@ -138,7 +157,8 @@
 
                     <StackLayout Grid.Row="0"
                        Grid.Column="1"
-                        BindableLayout.ItemsSource="{Binding EllipseCollections[22]}">
+                        BindableLayout.ItemsSource="{Binding EllipseCollections[22]}"
+                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
                     </StackLayout>
 
 
@@ -152,7 +172,8 @@
 
                     <StackLayout Grid.Row="0"
                         Grid.Column="2"
-                        BindableLayout.ItemsSource="{Binding EllipseCollections[21]}">
+                        BindableLayout.ItemsSource="{Binding EllipseCollections[21]}"
+                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
                     </StackLayout>
 
 
@@ -166,7 +187,8 @@
 
                     <StackLayout Grid.Row="0"
                         Grid.Column="3"
-                        BindableLayout.ItemsSource="{Binding EllipseCollections[20]}">
+                        BindableLayout.ItemsSource="{Binding EllipseCollections[20]}"
+                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
                     </StackLayout>
 
 
@@ -180,7 +202,8 @@
 
                     <StackLayout Grid.Row="0"
                         Grid.Column="4"
-                        BindableLayout.ItemsSource="{Binding EllipseCollections[19]}">
+                        BindableLayout.ItemsSource="{Binding EllipseCollections[19]}"
+                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
                     </StackLayout>
 
 
@@ -194,7 +217,8 @@
 
                     <StackLayout Grid.Row="0"
              Grid.Column="5"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[18]}">
+             BindableLayout.ItemsSource="{Binding EllipseCollections[18]}"
+                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
                     </StackLayout>
 
 
@@ -208,7 +232,8 @@
 
                     <StackLayout Grid.Row="0"
              Grid.Column="6"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[17]}">
+             BindableLayout.ItemsSource="{Binding EllipseCollections[17]}"
+                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
                     </StackLayout>
 
 
@@ -222,7 +247,8 @@
 
                     <StackLayout Grid.Row="0"
              Grid.Column="7"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[16]}">
+             BindableLayout.ItemsSource="{Binding EllipseCollections[16]}"
+                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
                     </StackLayout>
 
 
@@ -236,7 +262,8 @@
 
                     <StackLayout Grid.Row="0"
              Grid.Column="8"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[15]}">
+             BindableLayout.ItemsSource="{Binding EllipseCollections[15]}"
+                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
                     </StackLayout>
 
 
@@ -250,7 +277,8 @@
 
                     <StackLayout Grid.Row="0"
              Grid.Column="9"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[14]}">
+             BindableLayout.ItemsSource="{Binding EllipseCollections[14]}"
+                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
                     </StackLayout>
 
 
@@ -264,7 +292,8 @@
 
                     <StackLayout Grid.Row="0"
              Grid.Column="10"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[13]}">
+             BindableLayout.ItemsSource="{Binding EllipseCollections[13]}"
+                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
                     </StackLayout>
 
 
@@ -278,7 +307,8 @@
 
                     <StackLayout Grid.Row="0"
              Grid.Column="11"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[12]}">
+             BindableLayout.ItemsSource="{Binding EllipseCollections[12]}"
+                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
                     </StackLayout>
 
 
@@ -292,7 +322,8 @@
 
                     <StackLayout Grid.Row="1"
              Grid.Column="0"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[0]}">
+             BindableLayout.ItemsSource="{Binding EllipseCollections[0]}"
+                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
                     </StackLayout>
 
 
@@ -306,7 +337,8 @@
 
                     <StackLayout Grid.Row="1"
              Grid.Column="1"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[1]}">
+             BindableLayout.ItemsSource="{Binding EllipseCollections[1]}"
+                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
                     </StackLayout>
 
 
@@ -320,7 +352,8 @@
 
                     <StackLayout Grid.Row="1"
              Grid.Column="2"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[2]}">
+             BindableLayout.ItemsSource="{Binding EllipseCollections[2]}"
+                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
                     </StackLayout>
 
 
@@ -334,7 +367,8 @@
 
                     <StackLayout Grid.Row="1"
              Grid.Column="3"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[3]}">
+             BindableLayout.ItemsSource="{Binding EllipseCollections[3]}"
+                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
                     </StackLayout>
 
 
@@ -348,7 +382,8 @@
 
                     <StackLayout Grid.Row="1"
              Grid.Column="4"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[4]}">
+             BindableLayout.ItemsSource="{Binding EllipseCollections[4]}"
+                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
                     </StackLayout>
 
 
@@ -362,7 +397,8 @@
 
                     <StackLayout Grid.Row="1"
              Grid.Column="5"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[5]}">
+             BindableLayout.ItemsSource="{Binding EllipseCollections[5]}"
+                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
                     </StackLayout>
 
 
@@ -376,7 +412,8 @@
 
                     <StackLayout Grid.Row="1"
              Grid.Column="6"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[6]}">
+             BindableLayout.ItemsSource="{Binding EllipseCollections[6]}"
+                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
                     </StackLayout>
 
 
@@ -390,7 +427,8 @@
 
                     <StackLayout Grid.Row="1"
              Grid.Column="7"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[7]}">
+             BindableLayout.ItemsSource="{Binding EllipseCollections[7]}"
+                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
                     </StackLayout>
 
 
@@ -404,7 +442,8 @@
 
                     <StackLayout Grid.Row="1"
              Grid.Column="8"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[8]}">
+             BindableLayout.ItemsSource="{Binding EllipseCollections[8]}"
+                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
                     </StackLayout>
 
 
@@ -418,7 +457,8 @@
 
                     <StackLayout Grid.Row="1"
              Grid.Column="9"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[9]}">
+             BindableLayout.ItemsSource="{Binding EllipseCollections[9]}"
+                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
                     </StackLayout>
 
 
@@ -432,7 +472,8 @@
 
                     <StackLayout Grid.Row="1"
              Grid.Column="10"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[10]}">
+             BindableLayout.ItemsSource="{Binding EllipseCollections[10]}"
+                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
                     </StackLayout>
 
 
@@ -446,7 +487,8 @@
 
                     <StackLayout Grid.Row="1"
              Grid.Column="11"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[11]}">
+             BindableLayout.ItemsSource="{Binding EllipseCollections[11]}"
+                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
                     </StackLayout>
                 </Grid>
             </Grid>

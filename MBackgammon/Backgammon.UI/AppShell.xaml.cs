@@ -13,6 +13,7 @@ namespace Backgammon.UI
             Routing.RegisterRoute("offline_game", typeof(OfflineBackgammonView));
             Routing.RegisterRoute("anecdotes", typeof(AnecdotesView));
             Routing.RegisterRoute("settings", typeof(SettingsView));
+            Routing.RegisterRoute("test", typeof(TESTPAGE));
         }
     }
 }

@@ -1100,3 +1100,9 @@ C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-android\android\sr
 C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-android\android\src\crc64159f3caeb1269279\MauiSemanticOrderView.java
 C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-android\android\src\crc648fc34c62be8fbbff\Snackbar_SnackbarCallback.java
 C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-android\android\src\crc64d6358e7bf64fbac4\SpeechToTextImplementation_SpeechRecognitionListener.java
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-android\resizetizer\r\drawable\dice3.png
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-android\resizetizer\r\drawable\dice4.png
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-android\resizetizer\r\drawable\dice5.png
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-android\resizetizer\r\drawable\dice6.png
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-android\resizetizer\r\drawable\dice2.png
+C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-android\resizetizer\r\drawable\dice1.png

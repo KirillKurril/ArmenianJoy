@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Backgammon.UI.Pages.TESTPAGE"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:entities="clr-namespace:Entities.Models;assembly=Entities"
+             xmlns:models="clr-namespace:Backgammon.UI.ViewModels"
+             xmlns:tselectors="clr-namespace:Backgammon.UI.Selectors"
+             xmlns:converters="clr-namespace:Backgammon.UI.Converters"
+             x:DataType="models:TESTVIEWMODEL"             
+             BackgroundImageSource="field.png">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.04*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.042*"/>
+        </Grid.RowDefinitions>
+        <Label Text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+        
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.1*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0.085*"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="1" Grid.Row="3" Text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+                            
+            </Grid>
+        </Grid>
+    </Grid>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <ContentPage.Resources>
+        <converters:MoveColorConverter x:Key="MoveColorConverter"/>
+        <ResourceDictionary>
+            <Style x:Key="GamePageStyle" TargetType="ContentPage">
+                <Setter Property="BackgroundImageSource" Value="Resources/Images/field.png" />
+            </Style>
+            <Style x:Key="PositionButtonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="BorderColor" Value="Transparent"/>
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup>
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="Transparent" />
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="PointerOver">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="Goldenrod" />
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="Pressed">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="LightYellow" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
+            <tselectors:EllipseTemplateSelector x:Key="EllipseSelector" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+</ContentPage>

@@ -42,6 +42,7 @@ namespace Backgammon.UI
             services.AddTransient<OfflineBackgammonView>();
             services.AddTransient<OnlineBackgammonView>();
             services.AddTransient<SettingsView>();
+            services.AddTransient<TESTPAGE>();
             return services;
         }
         static IServiceCollection RegisterViewModels(this IServiceCollection services)
@@ -52,6 +53,7 @@ namespace Backgammon.UI
             services.AddTransient<OfflineBackgammonViewModel>();
             services.AddTransient<OnlineBackgammonViewModel>();
             services.AddTransient<SettingsViewModel>();
+            services.AddTransient<TESTVIEWMODEL>();
             return services;
         }
         static IServiceCollection RegisterServices(this IServiceCollection services)
