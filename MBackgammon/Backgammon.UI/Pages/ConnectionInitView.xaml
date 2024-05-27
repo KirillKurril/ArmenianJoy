@@ -35,7 +35,7 @@
     </ContentPage.Resources>
 
     <Grid>
-        <!--<Image Grid.Row="1" Grid.Column="1" Source="dialog_window.png" Aspect="Fill"/>-->
+        <Image Grid.Row="1" Grid.Column="1" Source="dialog_window.png" Aspect="Fill"/>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.5*"/>
             <RowDefinition/>

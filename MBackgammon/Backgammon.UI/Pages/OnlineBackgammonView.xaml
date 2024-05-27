@@ -42,6 +42,7 @@
                     </VisualStateGroupList>
                 </Setter>
             </Style>
+            
             <tselectors:EllipseTemplateSelector x:Key="EllipseSelector" />
         </ResourceDictionary>
     </ContentPage.Resources>
@@ -58,438 +59,489 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="0.085*"/>
             </Grid.ColumnDefinitions>
-            <Grid Grid.Column="0">
+
+            <Grid Grid.Column="1" >
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="0.3"/>
-                    <RowDefinition Height="0.06"/>
-                    <RowDefinition Height="0.4"/>
-                    <RowDefinition Height="0.1"/>
-                    <RowDefinition Height="0.04"/>
-                    <RowDefinition Height="0.1"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.1"/>
-                    <ColumnDefinition Width="0.8"/>
-                    <ColumnDefinition Width="0.1"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <StackLayout
-                    Grid.Row="0">
-                    <Label
-                        Text="White score"/>
-                    <Label
-                        Text="{Binding WhiteScore}"/>
-                    <Label
-                        Text="Black score"/>
-                    <Label
-                        Text="{Binding BlackScore}"/>
+
+
+                <Button
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Style="{StaticResource PositionButtonStyle}"
+                    Command="{Binding PositionSelectedCommand}"
+                    CommandParameter="23"/>
+
+                <StackLayout Grid.Row="0"
+                    Grid.Column="0"
+                    BindableLayout.ItemsSource="{Binding EllipseCollections[23]}"
+                    BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
                 </StackLayout>
-                <Ellipse 
-                    Grid.Row="1"
-                    WidthRequest="{Binding DiceSize}"
-                    HeightRequest="{Binding DiceSize}"
-                    BackgroundColor="{Binding MoveColor, Converter={StaticResource MoveColorConverter}}" />
-                <Image
-                     Grid.Row="3"
-                     Grid.Column="1"
-                     Source="{Binding FirstDicePicture}"
-                     Aspect="AspectFit"
-                     HorizontalOptions="Center"
-                     VerticalOptions="Center"/>
-                <Image
-                    Grid.Row="5"
+
+
+
+                <Button
+                    Grid.Row="0"
                     Grid.Column="1"
-                    Source="{Binding SecondDicePicture}"
-                    Aspect="AspectFit"
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center"/>
-                <Grid/>
-                <Button x:Name="Throw"
-                Grid.Column="2"
-                Text="Выбросить"
-                IsVisible="{Binding ThrowButtonIsActive}"
-                IsEnabled="{Binding ThrowButtonIsActive}"
-                Command="{Binding PositionSelectedCommand}"
-                CommandParameter="25"/>
+                    Style="{StaticResource PositionButtonStyle}"
+                    Command="{Binding PositionSelectedCommand}"
+                    CommandParameter="22"/>
 
-                <Grid Grid.Column="1">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="0.5*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-
-
-                    <Button
-                        Grid.Row="0"
-                        Grid.Column="0"
-                        Style="{StaticResource PositionButtonStyle}"
-                        Command="{Binding PositionSelectedCommand}"
-                        CommandParameter="23"/>
-
-                    <StackLayout Grid.Row="0"
-                        Grid.Column="0"
-                        BindableLayout.ItemsSource="{Binding EllipseCollections[23]}"
-                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
-                    </StackLayout>
+                <StackLayout Grid.Row="0"
+                    Grid.Column="1"
+                    BindableLayout.ItemsSource="{Binding EllipseCollections[22]}"
+                    BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
+                </StackLayout>
 
 
 
-                    <Button
-                        Grid.Row="0"
-                        Grid.Column="1"
-                        Style="{StaticResource PositionButtonStyle}"
-                        Command="{Binding PositionSelectedCommand}"
-                        CommandParameter="22"/>
-
-                    <StackLayout Grid.Row="0"
-                       Grid.Column="1"
-                        BindableLayout.ItemsSource="{Binding EllipseCollections[22]}"
-                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
-                    </StackLayout>
-
-
-
-                    <Button
-                        Grid.Row="0"
-                        Grid.Column="2"
-                        Style="{StaticResource PositionButtonStyle}"
-                        Command="{Binding PositionSelectedCommand}"
-                        CommandParameter="21"/>
-
-                    <StackLayout Grid.Row="0"
-                        Grid.Column="2"
-                        BindableLayout.ItemsSource="{Binding EllipseCollections[21]}"
-                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
-                    </StackLayout>
-
-
-
-                    <Button
-                        Grid.Row="0"
-                        Grid.Column="3"
-                        Style="{StaticResource PositionButtonStyle}"
-                        Command="{Binding PositionSelectedCommand}"
-                        CommandParameter="20"/>
-
-                    <StackLayout Grid.Row="0"
-                        Grid.Column="3"
-                        BindableLayout.ItemsSource="{Binding EllipseCollections[20]}"
-                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
-                    </StackLayout>
-
-
-
-                    <Button
-                        Grid.Row="0"
-                        Grid.Column="4"
-                        Style="{StaticResource PositionButtonStyle}"
-                        Command="{Binding PositionSelectedCommand}"
-                        CommandParameter="19"/>
-
-                    <StackLayout Grid.Row="0"
-                        Grid.Column="4"
-                        BindableLayout.ItemsSource="{Binding EllipseCollections[19]}"
-                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
-                    </StackLayout>
-
-
-
-                    <Button
+                <Button
                     Grid.Row="0"
+                    Grid.Column="2"
+                    Style="{StaticResource PositionButtonStyle}"
+                    Command="{Binding PositionSelectedCommand}"
+                    CommandParameter="21"/>
+
+                <StackLayout Grid.Row="0"
+                   Grid.Column="2"
+                   BindableLayout.ItemsSource="{Binding EllipseCollections[21]}"
+                   BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
+                </StackLayout>
+
+
+
+                <Button
+                   Grid.Row="0"
+                   Grid.Column="3"
+                   Style="{StaticResource PositionButtonStyle}"
+                   Command="{Binding PositionSelectedCommand}"
+                   CommandParameter="20"/>
+
+                <StackLayout Grid.Row="0"
+                   Grid.Column="3"
+                   BindableLayout.ItemsSource="{Binding EllipseCollections[20]}"
+                   BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
+                </StackLayout>
+
+
+
+                <Button
+                   Grid.Row="0"
+                   Grid.Column="4"
+                   Style="{StaticResource PositionButtonStyle}"
+                   Command="{Binding PositionSelectedCommand}"
+                   CommandParameter="19"/>
+
+                <StackLayout Grid.Row="0"
+                   Grid.Column="4"
+                   BindableLayout.ItemsSource="{Binding EllipseCollections[19]}"
+                   BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
+                </StackLayout>
+
+
+
+                <Button
+                   Grid.Row="0"
+                   Grid.Column="5"
+                   Style="{StaticResource PositionButtonStyle}"
+                   Command="{Binding PositionSelectedCommand}"
+                   CommandParameter="18"/>
+
+                <StackLayout Grid.Row="0"
                     Grid.Column="5"
-                    Style="{StaticResource PositionButtonStyle}"
-                    Command="{Binding PositionSelectedCommand}"
-                    CommandParameter="18"/>
-
-                    <StackLayout Grid.Row="0"
-             Grid.Column="5"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[18]}"
-                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
-                    </StackLayout>
+                    BindableLayout.ItemsSource="{Binding EllipseCollections[18]}"
+                    BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
+                </StackLayout>
 
 
 
-                    <Button
-                    Grid.Row="0"
+                <Button
+                   Grid.Row="0"
+                   Grid.Column="6"
+                   Style="{StaticResource PositionButtonStyle}"
+                   Command="{Binding PositionSelectedCommand}"
+                   CommandParameter="17"/>
+
+                <StackLayout Grid.Row="0"
                     Grid.Column="6"
-                    Style="{StaticResource PositionButtonStyle}"
-                    Command="{Binding PositionSelectedCommand}"
-                    CommandParameter="17"/>
-
-                    <StackLayout Grid.Row="0"
-             Grid.Column="6"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[17]}"
-                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
-                    </StackLayout>
+                    BindableLayout.ItemsSource="{Binding EllipseCollections[17]}"
+                    BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
+                </StackLayout>
 
 
 
-                    <Button
-                    Grid.Row="0"
+                <Button
+                   Grid.Row="0"
+                   Grid.Column="7"
+                   Style="{StaticResource PositionButtonStyle}"
+                   Command="{Binding PositionSelectedCommand}"
+                   CommandParameter="16"/>
+
+                <StackLayout Grid.Row="0"
                     Grid.Column="7"
-                    Style="{StaticResource PositionButtonStyle}"
-                    Command="{Binding PositionSelectedCommand}"
-                    CommandParameter="16"/>
-
-                    <StackLayout Grid.Row="0"
-             Grid.Column="7"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[16]}"
-                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
-                    </StackLayout>
+                    BindableLayout.ItemsSource="{Binding EllipseCollections[16]}"
+                    BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
+                </StackLayout>
 
 
 
-                    <Button
-                    Grid.Row="0"
-                    Grid.Column="8"
-                    Style="{StaticResource PositionButtonStyle}"
-                    Command="{Binding PositionSelectedCommand}"
-                    CommandParameter="15"/>
+                <Button
+                   Grid.Row="0"
+                   Grid.Column="8"
+                   Style="{StaticResource PositionButtonStyle}"
+                   Command="{Binding PositionSelectedCommand}"
+                   CommandParameter="15"/>
 
-                    <StackLayout Grid.Row="0"
-             Grid.Column="8"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[15]}"
-                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
-                    </StackLayout>
+                <StackLayout Grid.Row="0"
+                   Grid.Column="8"
+                   BindableLayout.ItemsSource="{Binding EllipseCollections[15]}"
+                   BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
+                </StackLayout>
 
 
 
-                    <Button
+                <Button
                     Grid.Row="0"
                     Grid.Column="9"
                     Style="{StaticResource PositionButtonStyle}"
                     Command="{Binding PositionSelectedCommand}"
                     CommandParameter="14"/>
 
-                    <StackLayout Grid.Row="0"
-             Grid.Column="9"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[14]}"
-                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
-                    </StackLayout>
+                <StackLayout Grid.Row="0"
+                    Grid.Column="9"
+                    BindableLayout.ItemsSource="{Binding EllipseCollections[14]}"
+                    BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
+                </StackLayout>
 
 
 
-                    <Button
+                <Button
                     Grid.Row="0"
                     Grid.Column="10"
                     Style="{StaticResource PositionButtonStyle}"
                     Command="{Binding PositionSelectedCommand}"
                     CommandParameter="13"/>
 
-                    <StackLayout Grid.Row="0"
-             Grid.Column="10"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[13]}"
-                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
-                    </StackLayout>
+                <StackLayout Grid.Row="0"
+                    Grid.Column="10"
+                    BindableLayout.ItemsSource="{Binding EllipseCollections[13]}"
+                    BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
+                </StackLayout>
 
 
 
-                    <Button
+                <Button
                     Grid.Row="0"
                     Grid.Column="11"
                     Style="{StaticResource PositionButtonStyle}"
                     Command="{Binding PositionSelectedCommand}"
                     CommandParameter="12"/>
 
-                    <StackLayout Grid.Row="0"
-             Grid.Column="11"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[12]}"
-                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
-                    </StackLayout>
+                <StackLayout Grid.Row="0"
+                    Grid.Column="11"
+                    BindableLayout.ItemsSource="{Binding EllipseCollections[12]}"
+                    BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
+                </StackLayout>
 
 
 
-                    <Button
+                <Button
                     Grid.Row="1"
                     Grid.Column="0"
                     Style="{StaticResource PositionButtonStyle}"
                     Command="{Binding PositionSelectedCommand}"
                     CommandParameter="0"/>
 
-                    <StackLayout Grid.Row="1"
-             Grid.Column="0"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[0]}"
-                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
-                    </StackLayout>
+                <StackLayout Grid.Row="1"
+                    Grid.Column="0"
+                    BindableLayout.ItemsSource="{Binding EllipseCollections[0]}"
+                    BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
+                </StackLayout>
 
 
 
-                    <Button
+                <Button
                     Grid.Row="1"
                     Grid.Column="1"
                     Style="{StaticResource PositionButtonStyle}"
                     Command="{Binding PositionSelectedCommand}"
                     CommandParameter="1"/>
 
-                    <StackLayout Grid.Row="1"
-             Grid.Column="1"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[1]}"
-                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
-                    </StackLayout>
+                <StackLayout Grid.Row="1"
+                    Grid.Column="1"
+                    BindableLayout.ItemsSource="{Binding EllipseCollections[1]}"
+                    BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
+                </StackLayout>
 
 
 
-                    <Button
+                <Button
                     Grid.Row="1"
                     Grid.Column="2"
                     Style="{StaticResource PositionButtonStyle}"
                     Command="{Binding PositionSelectedCommand}"
                     CommandParameter="2"/>
 
-                    <StackLayout Grid.Row="1"
-             Grid.Column="2"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[2]}"
-                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
-                    </StackLayout>
+                <StackLayout Grid.Row="1"
+                    Grid.Column="2"
+                    BindableLayout.ItemsSource="{Binding EllipseCollections[2]}"
+                    BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
+                </StackLayout>
 
 
 
-                    <Button
+                <Button
                     Grid.Row="1"
                     Grid.Column="3"
                     Style="{StaticResource PositionButtonStyle}"
                     Command="{Binding PositionSelectedCommand}"
                     CommandParameter="3"/>
 
-                    <StackLayout Grid.Row="1"
-             Grid.Column="3"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[3]}"
-                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
-                    </StackLayout>
+                <StackLayout Grid.Row="1"
+                    Grid.Column="3"
+                    BindableLayout.ItemsSource="{Binding EllipseCollections[3]}"
+                    BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
+                </StackLayout>
 
 
 
-                    <Button
+                <Button
                     Grid.Row="1"
                     Grid.Column="4"
                     Style="{StaticResource PositionButtonStyle}"
                     Command="{Binding PositionSelectedCommand}"
                     CommandParameter="4"/>
 
-                    <StackLayout Grid.Row="1"
-             Grid.Column="4"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[4]}"
-                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
-                    </StackLayout>
+                <StackLayout Grid.Row="1"
+                    Grid.Column="4"
+                    BindableLayout.ItemsSource="{Binding EllipseCollections[4]}"
+                    BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
+                </StackLayout>
 
 
 
-                    <Button
+                <Button
                     Grid.Row="1"
                     Grid.Column="5"
                     Style="{StaticResource PositionButtonStyle}"
                     Command="{Binding PositionSelectedCommand}"
                     CommandParameter="5"/>
 
-                    <StackLayout Grid.Row="1"
-             Grid.Column="5"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[5]}"
-                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
-                    </StackLayout>
+                <StackLayout Grid.Row="1"
+                    Grid.Column="5"
+                    BindableLayout.ItemsSource="{Binding EllipseCollections[5]}"
+                    BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
+                </StackLayout>
 
 
 
-                    <Button
+                <Button
                     Grid.Row="1"
                     Grid.Column="6"
                     Style="{StaticResource PositionButtonStyle}"
                     Command="{Binding PositionSelectedCommand}"
                     CommandParameter="6"/>
 
-                    <StackLayout Grid.Row="1"
-             Grid.Column="6"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[6]}"
-                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
-                    </StackLayout>
+                <StackLayout Grid.Row="1"
+                    Grid.Column="6"
+                    BindableLayout.ItemsSource="{Binding EllipseCollections[6]}"
+                    BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
+                </StackLayout>
 
 
 
-                    <Button
+                <Button
                     Grid.Row="1"
                     Grid.Column="7"
                     Style="{StaticResource PositionButtonStyle}"
                     Command="{Binding PositionSelectedCommand}"
                     CommandParameter="7"/>
 
-                    <StackLayout Grid.Row="1"
-             Grid.Column="7"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[7]}"
-                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
-                    </StackLayout>
+                <StackLayout Grid.Row="1"
+                    Grid.Column="7"
+                    BindableLayout.ItemsSource="{Binding EllipseCollections[7]}"
+                    BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
+                </StackLayout>
 
 
 
-                    <Button
+                <Button
                     Grid.Row="1"
                     Grid.Column="8"
                     Style="{StaticResource PositionButtonStyle}"
                     Command="{Binding PositionSelectedCommand}"
                     CommandParameter="8"/>
 
-                    <StackLayout Grid.Row="1"
-             Grid.Column="8"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[8]}"
-                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
-                    </StackLayout>
+                <StackLayout Grid.Row="1"
+                    Grid.Column="8"
+                    BindableLayout.ItemsSource="{Binding EllipseCollections[8]}"
+                    BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
+                </StackLayout>
 
 
 
-                    <Button
+                <Button
                     Grid.Row="1"
                     Grid.Column="9"
                     Style="{StaticResource PositionButtonStyle}"
                     Command="{Binding PositionSelectedCommand}"
                     CommandParameter="9"/>
 
-                    <StackLayout Grid.Row="1"
-             Grid.Column="9"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[9]}"
-                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
-                    </StackLayout>
+                <StackLayout Grid.Row="1"
+                    Grid.Column="9"
+                    BindableLayout.ItemsSource="{Binding EllipseCollections[9]}"
+                    BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
+                </StackLayout>
 
 
 
-                    <Button
+                <Button
                     Grid.Row="1"
                     Grid.Column="10"
                     Style="{StaticResource PositionButtonStyle}"
                     Command="{Binding PositionSelectedCommand}"
                     CommandParameter="10"/>
 
-                    <StackLayout Grid.Row="1"
-             Grid.Column="10"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[10]}"
-                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
-                    </StackLayout>
+                <StackLayout Grid.Row="1"
+                    Grid.Column="10"
+                    BindableLayout.ItemsSource="{Binding EllipseCollections[10]}"
+                    BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
+                </StackLayout>
 
 
 
-                    <Button
+                <Button
                     Grid.Row="1"
                     Grid.Column="11"
                     Style="{StaticResource PositionButtonStyle}"
                     Command="{Binding PositionSelectedCommand}"
                     CommandParameter="11"/>
 
-                    <StackLayout Grid.Row="1"
-             Grid.Column="11"
-             BindableLayout.ItemsSource="{Binding EllipseCollections[11]}"
-                        BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
-                    </StackLayout>
+                <StackLayout Grid.Row="1"
+                    Grid.Column="11"
+                    BindableLayout.ItemsSource="{Binding EllipseCollections[11]}"
+                    BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
+                </StackLayout>
+            </Grid>
+
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="0.42*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.35*"/>
+                        <RowDefinition Height="0.2*"/>
+                        <RowDefinition Height="0.08*"/>
+                        <RowDefinition Height="0.35*"/>
+                        <RowDefinition Height="0.2*"/>
+                        <RowDefinition Height="0.5*"/>
+                        <RowDefinition Height="0.3*"/>
+                        <RowDefinition Height="0.2*"/>
+                        <RowDefinition Height="0.00*"/>
+                        <RowDefinition Height="0.2*"/>
+                        <RowDefinition Height="0.2*"/>
+                        <RowDefinition Height="1.0*"/>
+                    </Grid.RowDefinitions>
+                    <Label
+                        FontFamily="Comic Sans MS"
+                        TextColor="#380000"
+                        FontAttributes="Bold"
+                        FontSize="17"
+                        Grid.Row="0"
+                        Text="White score:"/>
+                    <Label
+                        FontFamily="Comic Sans MS"
+                        TextColor="#380000"
+                        FontAttributes="Bold"
+                        FontSize="17"
+                        Grid.Row="1"
+                        Text="{Binding WhiteScore}"/>
+                    <Label
+                        FontFamily="Comic Sans MS"
+                        TextColor="#380000"
+                        FontAttributes="Bold"
+                        FontSize="17"
+                        Grid.Row="3"
+                        Text="Black score:"/>
+                    <Label
+                        FontFamily="Comic Sans MS"
+                        TextColor="#380000"
+                        FontAttributes="Bold"
+                        FontSize="17"
+                        Grid.Row="4"
+                        Text="{Binding BlackScore}"/>
+
+                    
+                    <Button 
+                        Grid.Row="6"
+                        Text="Сброс"
+                        Command="{Binding PositionSelectedCommand}"
+                        Background="#491c0c"
+                        TextColor="#ecd4a6"
+                        BorderColor="#2c1107"
+                        BorderWidth="2"
+                        FontSize="13"
+                        Padding="5,5,5,5"
+                        CornerRadius="10"
+                        CommandParameter="25"/>
+
+
+                    <Ellipse 
+                         Grid.Row="9"
+                         WidthRequest="30"
+                         HeightRequest="30"
+                         BackgroundColor="{Binding MoveColor, Converter={StaticResource MoveColorConverter}}"/>
+
+                    <Grid
+                        Grid.Row="11">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="8*"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="15*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="15*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <Image
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Source="dice1.png"
+                        Aspect="AspectFit"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"/>
+                        <Image
+                        Grid.Column="1"
+                        Grid.Row="3"
+                        Source="dice2.png"
+                        Aspect="AspectFit"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"/>
+                    </Grid>
+
                 </Grid>
             </Grid>
         </Grid>

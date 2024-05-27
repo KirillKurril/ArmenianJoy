@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-05-26T16:34:24.877</Modified>
+      <Modified>2024-05-27T22:01:14.708</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-05-26T16:14:08.174</Modified>
+      <Modified>2024-05-27T21:57:53.169</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Backgammon.UI.runtimeconfig.json">
       <PackagePath>Backgammon.UI.runtimeconfig.json</PackagePath>
-      <Modified>2024-05-26T14:34:59.265</Modified>
+      <Modified>2024-05-27T22:01:14.396</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Backgammon.UI.dll">
       <PackagePath>Backgammon.UI.dll</PackagePath>
-      <Modified>2024-05-26T16:34:23.651</Modified>
+      <Modified>2024-05-27T22:01:13.228</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Backgammon.UI.exe</PackagePath>
-      <Modified>2024-05-26T16:34:23.666</Modified>
+      <Modified>2024-05-27T22:01:13.314</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -55,23 +55,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-05-25T23:29:18.101</Modified>
+      <Modified>2024-05-27T21:57:42.281</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-05-25T23:29:18.135</Modified>
+      <Modified>2024-05-27T21:57:42.313</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-05-25T23:29:18.172</Modified>
+      <Modified>2024-05-27T21:57:42.357</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-05-25T23:29:18.239</Modified>
+      <Modified>2024-05-27T21:57:42.461</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-05-25T23:29:18.507</Modified>
+      <Modified>2024-05-27T21:57:42.724</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -83,255 +83,255 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-05-25T23:29:22.587</Modified>
+      <Modified>2024-05-27T21:57:48.810</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.576</Modified>
+      <Modified>2024-05-27T21:57:48.798</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.576</Modified>
+      <Modified>2024-05-27T21:57:48.798</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.576</Modified>
+      <Modified>2024-05-27T21:57:48.798</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.576</Modified>
+      <Modified>2024-05-27T21:57:48.797</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.575</Modified>
+      <Modified>2024-05-27T21:57:48.797</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.583</Modified>
+      <Modified>2024-05-27T21:57:48.806</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.583</Modified>
+      <Modified>2024-05-27T21:57:48.805</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.582</Modified>
+      <Modified>2024-05-27T21:57:48.804</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.582</Modified>
+      <Modified>2024-05-27T21:57:48.805</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.582</Modified>
+      <Modified>2024-05-27T21:57:48.805</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.584</Modified>
+      <Modified>2024-05-27T21:57:48.807</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.584</Modified>
+      <Modified>2024-05-27T21:57:48.807</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.583</Modified>
+      <Modified>2024-05-27T21:57:48.806</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.584</Modified>
+      <Modified>2024-05-27T21:57:48.806</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.583</Modified>
+      <Modified>2024-05-27T21:57:48.806</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.587</Modified>
+      <Modified>2024-05-27T21:57:48.810</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.587</Modified>
+      <Modified>2024-05-27T21:57:48.810</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.587</Modified>
+      <Modified>2024-05-27T21:57:48.809</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.586</Modified>
+      <Modified>2024-05-27T21:57:48.809</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.586</Modified>
+      <Modified>2024-05-27T21:57:48.809</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.586</Modified>
+      <Modified>2024-05-27T21:57:48.809</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.586</Modified>
+      <Modified>2024-05-27T21:57:48.808</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.585</Modified>
+      <Modified>2024-05-27T21:57:48.807</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.585</Modified>
+      <Modified>2024-05-27T21:57:48.808</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.585</Modified>
+      <Modified>2024-05-27T21:57:48.808</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.579</Modified>
+      <Modified>2024-05-27T21:57:48.801</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.579</Modified>
+      <Modified>2024-05-27T21:57:48.801</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.579</Modified>
+      <Modified>2024-05-27T21:57:48.801</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.578</Modified>
+      <Modified>2024-05-27T21:57:48.800</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.578</Modified>
+      <Modified>2024-05-27T21:57:48.800</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.580</Modified>
+      <Modified>2024-05-27T21:57:48.803</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.580</Modified>
+      <Modified>2024-05-27T21:57:48.802</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.580</Modified>
+      <Modified>2024-05-27T21:57:48.802</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.580</Modified>
+      <Modified>2024-05-27T21:57:48.802</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.579</Modified>
+      <Modified>2024-05-27T21:57:48.801</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.582</Modified>
+      <Modified>2024-05-27T21:57:48.804</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.581</Modified>
+      <Modified>2024-05-27T21:57:48.804</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.581</Modified>
+      <Modified>2024-05-27T21:57:48.803</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.581</Modified>
+      <Modified>2024-05-27T21:57:48.803</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.581</Modified>
+      <Modified>2024-05-27T21:57:48.803</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.578</Modified>
+      <Modified>2024-05-27T21:57:48.800</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.577</Modified>
+      <Modified>2024-05-27T21:57:48.800</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.577</Modified>
+      <Modified>2024-05-27T21:57:48.799</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.577</Modified>
+      <Modified>2024-05-27T21:57:48.799</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.577</Modified>
+      <Modified>2024-05-27T21:57:48.799</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dialog_window.scale-100.png">
       <PackagePath>dialog_window.scale-100.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.575</Modified>
+      <Modified>2024-05-27T21:57:48.811</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dice1.scale-100.png">
       <PackagePath>dice1.scale-100.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.575</Modified>
+      <Modified>2024-05-27T21:57:48.794</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dice2.scale-100.png">
       <PackagePath>dice2.scale-100.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.575</Modified>
+      <Modified>2024-05-27T21:57:48.797</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dice3.scale-100.png">
       <PackagePath>dice3.scale-100.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.573</Modified>
+      <Modified>2024-05-27T21:57:48.796</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dice4.scale-100.png">
       <PackagePath>dice4.scale-100.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.573</Modified>
+      <Modified>2024-05-27T21:57:48.811</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dice5.scale-100.png">
       <PackagePath>dice5.scale-100.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.574</Modified>
+      <Modified>2024-05-27T21:57:48.795</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dice6.scale-100.png">
       <PackagePath>dice6.scale-100.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.574</Modified>
+      <Modified>2024-05-27T21:57:48.795</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.589</Modified>
+      <Modified>2024-05-27T21:57:48.794</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.589</Modified>
+      <Modified>2024-05-27T21:57:48.794</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.588</Modified>
+      <Modified>2024-05-27T21:57:48.793</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.588</Modified>
+      <Modified>2024-05-27T21:57:48.793</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.588</Modified>
+      <Modified>2024-05-27T21:57:48.793</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\empty_field.scale-100.png">
       <PackagePath>empty_field.scale-100.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.573</Modified>
+      <Modified>2024-05-27T21:57:48.794</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\field.scale-100.png">
       <PackagePath>field.scale-100.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.588</Modified>
+      <Modified>2024-05-27T21:57:48.795</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon.scale-100.ico">
       <PackagePath>icon.scale-100.ico</PackagePath>
-      <Modified>2024-05-25T23:29:22.574</Modified>
+      <Modified>2024-05-27T21:57:48.796</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\menu.scale-100.png">
       <PackagePath>menu.scale-100.png</PackagePath>
-      <Modified>2024-05-25T23:29:22.574</Modified>
+      <Modified>2024-05-27T21:57:48.796</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Backgammon.UI.deps.json">
       <PackagePath>Backgammon.UI.deps.json</PackagePath>
-      <Modified>2024-05-26T16:14:07.695</Modified>
+      <Modified>2024-05-27T22:01:14.392</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -671,11 +671,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.Client\bin\Debug\net8.0\Backgammon.Client.dll">
       <PackagePath>Backgammon.Client.dll</PackagePath>
-      <Modified>2024-05-26T16:12:59.289</Modified>
+      <Modified>2024-05-27T21:57:11.344</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\OOP\BackgammonLib\Entities\bin\Debug\net8.0\Entities.dll">
       <PackagePath>Entities.dll</PackagePath>
-      <Modified>2024-05-26T15:44:09.228</Modified>
+      <Modified>2024-05-27T21:57:10.528</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.maui.controls.compatibility\8.0.40\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

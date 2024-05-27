@@ -134,6 +134,43 @@
         <member name="P:Backgammon.UI.ViewModels.OnlineBackgammonViewModel.CancelChoiсeCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Backgammon.UI.ViewModels.OnlineBackgammonViewModel.CancelChoiсe"/>.</summary>
         </member>
+        <member name="T:Backgammon.UI.ViewModels.TESTVIEWMODEL">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Backgammon.UI.ViewModels.TESTVIEWMODEL.ThrowEnabled">
+            <inheritdoc cref="F:Backgammon.UI.ViewModels.TESTVIEWMODEL._throwEnabled"/>
+        </member>
+        <member name="P:Backgammon.UI.ViewModels.TESTVIEWMODEL.FieldEnabled">
+            <inheritdoc cref="F:Backgammon.UI.ViewModels.TESTVIEWMODEL._fieldEnabled"/>
+        </member>
+        <member name="P:Backgammon.UI.ViewModels.TESTVIEWMODEL.DiceSize">
+            <inheritdoc cref="F:Backgammon.UI.ViewModels.TESTVIEWMODEL._diceSize"/>
+        </member>
+        <member name="P:Backgammon.UI.ViewModels.TESTVIEWMODEL.WhiteScore">
+            <inheritdoc cref="F:Backgammon.UI.ViewModels.TESTVIEWMODEL._whiteScore"/>
+        </member>
+        <member name="P:Backgammon.UI.ViewModels.TESTVIEWMODEL.BlackScore">
+            <inheritdoc cref="F:Backgammon.UI.ViewModels.TESTVIEWMODEL._blackScore"/>
+        </member>
+        <member name="P:Backgammon.UI.ViewModels.TESTVIEWMODEL.ThrowButtonIsActive">
+            <inheritdoc cref="F:Backgammon.UI.ViewModels.TESTVIEWMODEL._throwButtonIsActive"/>
+        </member>
+        <member name="P:Backgammon.UI.ViewModels.TESTVIEWMODEL.FirstDicePicture">
+            <inheritdoc cref="F:Backgammon.UI.ViewModels.TESTVIEWMODEL._firstDicePicture"/>
+        </member>
+        <member name="P:Backgammon.UI.ViewModels.TESTVIEWMODEL.SecondDicePicture">
+            <inheritdoc cref="F:Backgammon.UI.ViewModels.TESTVIEWMODEL._secondDicePicture"/>
+        </member>
+        <member name="P:Backgammon.UI.ViewModels.TESTVIEWMODEL.MoveColor">
+            <inheritdoc cref="F:Backgammon.UI.ViewModels.TESTVIEWMODEL._moveColor"/>
+        </member>
+        <member name="F:Backgammon.UI.ViewModels.TESTVIEWMODEL.positionSelectedCommand">
+            <summary>The backing field for <see cref="P:Backgammon.UI.ViewModels.TESTVIEWMODEL.PositionSelectedCommand"/>.</summary>
+        </member>
+        <member name="P:Backgammon.UI.ViewModels.TESTVIEWMODEL.PositionSelectedCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Backgammon.UI.ViewModels.TESTVIEWMODEL.PositionSelected(System.String)"/>.</summary>
+        </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
             <summary>
             Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
