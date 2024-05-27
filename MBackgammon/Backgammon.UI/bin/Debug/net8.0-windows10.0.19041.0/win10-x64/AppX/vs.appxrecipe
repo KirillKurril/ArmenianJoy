@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-05-27T22:01:14.708</Modified>
+      <Modified>2024-05-27T23:13:27.481</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Backgammon.UI.dll">
       <PackagePath>Backgammon.UI.dll</PackagePath>
-      <Modified>2024-05-27T22:01:13.228</Modified>
+      <Modified>2024-05-27T23:13:26.316</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Backgammon.UI.exe</PackagePath>
-      <Modified>2024-05-27T22:01:13.314</Modified>
+      <Modified>2024-05-27T23:13:26.336</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

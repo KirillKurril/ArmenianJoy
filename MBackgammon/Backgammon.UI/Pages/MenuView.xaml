@@ -38,14 +38,14 @@
         <Grid Grid.Row="1" Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="0.5*"/>
                 <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="0.5*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Button Grid.Row="0"
-                    Text="Нарды" 
+                    Text="Локальная игра" 
                     Command="{Binding GoToOfflineGameCommand}"
                     Style="{StaticResource DialogButton}"/>
             <Button Grid.Row="2" 
@@ -53,7 +53,7 @@
                     Command="{Binding GoToAnecdotesCommand}"
                     Style="{StaticResource DialogButton}"/>
             <Button Grid.Row="4" 
-                    Text="Киндзмараули" 
+                    Text="Сетевая игра" 
                     Command="{Binding GoToConnectionPageCommand}"
                     Style="{StaticResource DialogButton}"/>
         </Grid>

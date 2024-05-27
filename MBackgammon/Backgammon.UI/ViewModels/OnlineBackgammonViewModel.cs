@@ -43,9 +43,14 @@ namespace Backgammon.UI.ViewModels
         string _secondDicePicture;
 
         [ObservableProperty]
-        int _moveColor;     
+        int _moveColor;
 
-        public ObservableCollection<ObservableCollection<Ellipse>> EllipseCollections { get; set; }
+        private ObservableCollection<ObservableCollection<Ellipse>> _ellipseCollections;
+        public ObservableCollection<ObservableCollection<Ellipse>> EllipseCollections
+        {
+            get => _ellipseCollections;
+            set => SetProperty(ref _ellipseCollections, value);
+        }
 
         [RelayCommand]
         async Task PositionSelected(string stringPositionIndex)
@@ -120,22 +125,25 @@ namespace Backgammon.UI.ViewModels
 
         void RefreshField(List<(int, int)> extraStatus)
         {
-            EllipseCollections.Clear();
-            foreach ((int color, int amount) in extraStatus)
+            MainThread.BeginInvokeOnMainThread(() =>
             {
-                var collection = new ObservableCollection<Ellipse>();
-                for (int i = 0; i < amount; ++i)
+                EllipseCollections.Clear();
+                foreach ((int color, int amount) in extraStatus)
                 {
-                    Ellipse ellipse = new Ellipse
+                    var collection = new ObservableCollection<Ellipse>();
+                    for (int i = 0; i < amount; ++i)
                     {
-                        WidthRequest = DiceSize,
-                        HeightRequest = DiceSize,
-                        Fill = color == Entities.Models.Colors.White ? Brush.White : Brush.Black
-                    };
-                    collection.Add(ellipse);
+                        Ellipse ellipse = new Ellipse
+                        {
+                            WidthRequest = DiceSize,
+                            HeightRequest = DiceSize,
+                            Fill = color == Entities.Models.Colors.White ? Brush.White : Brush.Black
+                        };
+                        collection.Add(ellipse);
+                    }
+                    EllipseCollections.Add(collection);
                 }
-                EllipseCollections.Add(collection);
-            }
+            });
         }
 
         public async Task LeavePageHandler()

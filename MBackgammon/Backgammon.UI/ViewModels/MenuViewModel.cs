@@ -21,7 +21,7 @@ namespace Backgammon.UI.ViewModels
             => await Shell.Current.GoToAsync("connecting");
 
         private async Task GoToOfflineGameHandler()
-            => await Shell.Current.GoToAsync("test");
+            => await Shell.Current.GoToAsync("offline_game");
 
         private async Task GoToSettingsHandler()
             => await Shell.Current.GoToAsync("connecting_page");

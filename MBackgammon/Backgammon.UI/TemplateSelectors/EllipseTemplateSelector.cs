@@ -17,20 +17,20 @@ namespace Backgammon.UI.Selectors
             {
                 return new DataTemplate(() =>
                 {
-                    return new Ellipse { WidthRequest = 50, HeightRequest = 50, Fill = Brush.White };
+                    return new Ellipse { WidthRequest = 18, HeightRequest = 18, Fill = Brush.White };
                 });
             }
             else if (ellipse.Fill == Brush.Black)
             {
                 return new DataTemplate(() =>
                 {
-                    return new Ellipse { WidthRequest = 50, HeightRequest = 50, Fill = Brush.Black };
+                    return new Ellipse { WidthRequest = 18, HeightRequest = 18, Fill = Brush.Black };
                 });
             }
 
             return new DataTemplate(() =>
             {
-                return new Ellipse { WidthRequest = 50, HeightRequest = 50, Fill = Brush.Red };
+                return new Ellipse { WidthRequest = 18, HeightRequest = 18, Fill = Brush.Red };
             });
         }
     }
