@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-05-27T23:13:27.481</Modified>
+      <Modified>2024-05-29T17:40:00.642</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Backgammon.UI.dll">
       <PackagePath>Backgammon.UI.dll</PackagePath>
-      <Modified>2024-05-27T23:13:26.316</Modified>
+      <Modified>2024-05-29T17:39:59.481</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Backgammon.UI.exe</PackagePath>
-      <Modified>2024-05-27T23:13:26.336</Modified>
+      <Modified>2024-05-29T17:39:59.492</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -671,11 +671,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\ArmenianJoy\MBackgammon\Backgammon.Client\bin\Debug\net8.0\Backgammon.Client.dll">
       <PackagePath>Backgammon.Client.dll</PackagePath>
-      <Modified>2024-05-27T21:57:11.344</Modified>
+      <Modified>2024-05-29T17:39:52.522</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Uni\OOP\BackgammonLib\Entities\bin\Debug\net8.0\Entities.dll">
       <PackagePath>Entities.dll</PackagePath>
-      <Modified>2024-05-27T21:57:10.528</Modified>
+      <Modified>2024-05-29T17:36:20.708</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.maui.controls.compatibility\8.0.40\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

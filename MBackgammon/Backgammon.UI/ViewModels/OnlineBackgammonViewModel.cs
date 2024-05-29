@@ -5,7 +5,6 @@ using Backgammon.Client.Abstractions;
 using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.ComponentModel;
 using System.Collections.ObjectModel;
-using System.Drawing;
 using Backgammon.UI.Services.Abstractions;
 
 namespace Backgammon.UI.ViewModels
@@ -111,7 +110,6 @@ namespace Backgammon.UI.ViewModels
         {
             _moveVerifier.Update(data.Status.ToArray(), data.DiceValues, data.MoveValues, data.ReachedHome, data.HatsOffToYou, data.Safemode);
             RefreshField(data.ExtraStatus);
-            FieldEnabled = _moveVerifier.Color == data.MoveColor;
             WhiteScore = data.Score.Item1;
             BlackScore = data.Score.Item2;
             MoveColor = data.MoveColor;
