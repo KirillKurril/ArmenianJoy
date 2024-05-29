@@ -1,1 +1,0 @@
-C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\Backgammon.UI.csproj;x64

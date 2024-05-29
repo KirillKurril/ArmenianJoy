@@ -334,7 +334,6 @@ C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-ios\iossimulator-x
 C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-ios\iossimulator-x64\ref\Backgammon.UI.dll
 C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\bin\Debug\net8.0-ios\iossimulator-x64\CommunityToolkit.Maui.dll
 C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\bin\Debug\net8.0-ios\iossimulator-x64\CommunityToolkit.Maui.Core.dll
-C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-ios\iossimulator-x64\build-signature\signature
 C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\dice2.png
 C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\dice6.png
 C:\Uni\ArmenianJoy\MBackgammon\Backgammon.UI\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\dice5.png
