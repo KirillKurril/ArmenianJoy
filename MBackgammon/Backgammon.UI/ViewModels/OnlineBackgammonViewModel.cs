@@ -36,10 +36,10 @@ namespace Backgammon.UI.ViewModels
         bool _throwButtonIsActive;
 
         [ObservableProperty]
-        string _firstDicePicture;
+        int _firstDiceValue;
 
         [ObservableProperty]
-        string _secondDicePicture;
+        int _secondDiceValue;
 
         [ObservableProperty]
         int _moveColor;
@@ -110,6 +110,8 @@ namespace Backgammon.UI.ViewModels
         {
             _moveVerifier.Update(data.Status.ToArray(), data.DiceValues, data.MoveValues, data.ReachedHome, data.HatsOffToYou, data.Safemode);
             RefreshField(data.ExtraStatus);
+            FirstDiceValue = data.DiceValues[0];
+            SecondDiceValue = data.DiceValues[1];
             WhiteScore = data.Score.Item1;
             BlackScore = data.Score.Item2;
             MoveColor = data.MoveColor;

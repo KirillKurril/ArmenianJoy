@@ -13,6 +13,7 @@
         
     <ContentPage.Resources>
         <converters:MoveColorConverter x:Key="MoveColorConverter"/>
+        <converters:DiceImageConverter x:Key="DiceImageConverter"/>
         <ResourceDictionary>
             
             <Style x:Key="GamePageStyle" TargetType="ContentPage">
@@ -564,19 +565,19 @@
                             <RowDefinition Height="1*"/>
                         </Grid.RowDefinitions>
                         <Image
-                        Grid.Column="1"
-                        Grid.Row="1"
-                        Source="dice1.png"
-                        Aspect="AspectFit"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"/>
+                            Grid.Column="1"
+                            Grid.Row="1"
+                            Source="{Binding FirstDiceValue, Converter={StaticResource DiceImageConverter}}"
+                            Aspect="AspectFit"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"/>
                         <Image
-                        Grid.Column="1"
-                        Grid.Row="3"
-                        Source="dice2.png"
-                        Aspect="AspectFit"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"/>
+                            Grid.Column="1"
+                            Grid.Row="3"
+                            Source="{Binding SecondDiceValue, Converter={StaticResource DiceImageConverter}}"
+                            Aspect="AspectFit"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"/>
                     </Grid>
 
                 </Grid>

@@ -113,11 +113,11 @@
         <member name="P:Backgammon.UI.ViewModels.OnlineBackgammonViewModel.ThrowButtonIsActive">
             <inheritdoc cref="F:Backgammon.UI.ViewModels.OnlineBackgammonViewModel._throwButtonIsActive"/>
         </member>
-        <member name="P:Backgammon.UI.ViewModels.OnlineBackgammonViewModel.FirstDicePicture">
-            <inheritdoc cref="F:Backgammon.UI.ViewModels.OnlineBackgammonViewModel._firstDicePicture"/>
+        <member name="P:Backgammon.UI.ViewModels.OnlineBackgammonViewModel.FirstDiceValue">
+            <inheritdoc cref="F:Backgammon.UI.ViewModels.OnlineBackgammonViewModel._firstDiceValue"/>
         </member>
-        <member name="P:Backgammon.UI.ViewModels.OnlineBackgammonViewModel.SecondDicePicture">
-            <inheritdoc cref="F:Backgammon.UI.ViewModels.OnlineBackgammonViewModel._secondDicePicture"/>
+        <member name="P:Backgammon.UI.ViewModels.OnlineBackgammonViewModel.SecondDiceValue">
+            <inheritdoc cref="F:Backgammon.UI.ViewModels.OnlineBackgammonViewModel._secondDiceValue"/>
         </member>
         <member name="P:Backgammon.UI.ViewModels.OnlineBackgammonViewModel.MoveColor">
             <inheritdoc cref="F:Backgammon.UI.ViewModels.OnlineBackgammonViewModel._moveColor"/>
@@ -333,14 +333,20 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ThrowButtonIsActive">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ThrowButtonIsActive" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FirstDiceValue">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FirstDiceValue" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SecondDiceValue">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SecondDiceValue" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.MoveColor">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "MoveColor" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FirstDicePicture">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FirstDicePicture" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SecondDicePicture">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SecondDicePicture" generated properties.</summary>
-        </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.MoveColor">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "MoveColor" generated properties.</summary>
         </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
             <summary>
@@ -384,14 +390,20 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ThrowButtonIsActive">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ThrowButtonIsActive" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FirstDiceValue">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FirstDiceValue" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SecondDiceValue">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SecondDiceValue" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.MoveColor">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "MoveColor" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FirstDicePicture">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FirstDicePicture" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SecondDicePicture">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SecondDicePicture" generated properties.</summary>
-        </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.MoveColor">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "MoveColor" generated properties.</summary>
         </member>
     </members>
 </doc>
