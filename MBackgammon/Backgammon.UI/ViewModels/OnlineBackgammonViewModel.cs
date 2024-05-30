@@ -6,6 +6,7 @@ using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.ComponentModel;
 using System.Collections.ObjectModel;
 using Backgammon.UI.Services.Abstractions;
+using System.Diagnostics;
 
 namespace Backgammon.UI.ViewModels
 {
@@ -14,6 +15,7 @@ namespace Backgammon.UI.ViewModels
         IGameClient _client;
         INavigationService _navigationService;
         MoveVerifier _moveVerifier;
+        bool _firstPositionSelected => _firstPosition != -1;
 
         int _firstPosition = -1;
 
@@ -79,27 +81,40 @@ namespace Backgammon.UI.ViewModels
         
         private async Task PositionSelectedHandler(string stringPositionIndex)
         {
-            int selectedCellIndex = int.Parse(stringPositionIndex);
-            if (selectedCellIndex != 25)
+            int selectedPosition = int.Parse(stringPositionIndex);
+            if (selectedPosition != 25)
             {
                 if (_moveVerifier.Color == Entities.Models.Colors.Black)
-                    selectedCellIndex = (selectedCellIndex + 12) % 24;
+                    selectedPosition = (selectedPosition + 12) % 24;
             }
 
-            if (_firstPosition != -1
-                && _moveVerifier.MoveConfirm(_firstPosition, selectedCellIndex))
+            if (_firstPositionSelected)
             {
-                await Task.Run(()
-                    => _client.MoveRequest(_firstPosition, selectedCellIndex));
-                _firstPosition = -1;
-                ThrowButtonIsActive = false;
+                if (_moveVerifier.MoveConfirm(_firstPosition, selectedPosition))
+                {
+                    try
+                    {
+                        await Task.Run(()
+                            => _client.MoveRequest(_firstPosition, selectedPosition));
+                    }
+                    catch(Exception ex)
+                    {
+                        Debug.WriteLine(ex.Message);
+                    }
+
+                }
+                else
+                    _firstPosition = -1;
             }
-            else if (_moveVerifier.MoveConfirm(_firstPosition, selectedCellIndex))
+            else if (_moveVerifier.VerifyStartPosition(selectedPosition))
             {
-                _firstPosition = selectedCellIndex;
-                if (_moveVerifier.Throwable(selectedCellIndex))
+                _firstPosition = selectedPosition;
+
+                if (_moveVerifier.GetPositionEctability(selectedPosition))
                     ThrowButtonIsActive = true;
             }
+
+
         }
 
         private async Task CancelChoiсeHandler()
@@ -111,11 +126,13 @@ namespace Backgammon.UI.ViewModels
             _moveVerifier.Update(data.Status.ToArray(), data.DiceValues, data.MoveValues, data.ReachedHome, data.HatsOffToYou, data.Safemode);
             RefreshField(data.ExtraStatus);
             FirstDiceValue = data.DiceValues[0];
-            SecondDiceValue = data.DiceValues[1];
+            SecondDiceValue = data.DiceValues.Count >= 2 ? data.DiceValues[1] : 0;
             WhiteScore = data.Score.Item1;
             BlackScore = data.Score.Item2;
             MoveColor = data.MoveColor;
             FieldEnabled = _moveVerifier.Color == MoveColor;
+            _firstPosition = -1;
+            ThrowButtonIsActive = false;
         }
 
         public void EndGameHandler(object sender, EventArgs e)

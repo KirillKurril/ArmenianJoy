@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Backgammon.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+47a7a9c51fdef694d65a79b5860f3150ceaa38a3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+cf8fcfb41b6a896ec70b3add77c6cba4cc2ba327")]
 [assembly: System.Reflection.AssemblyProductAttribute("Backgammon.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Backgammon.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

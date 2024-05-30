@@ -2,6 +2,7 @@
 using Entities.Models;
 using Microsoft.AspNetCore.SignalR.Client;
 using Newtonsoft.Json;
+using System.Diagnostics;
 
 namespace Backgammon.Client.Services
 {
@@ -30,7 +31,30 @@ namespace Backgammon.Client.Services
         {
             hubConnection = new HubConnectionBuilder()
                 .WithUrl(URL)
+                .WithAutomaticReconnect()
                 .Build();
+
+            hubConnection.Closed += async (error) =>
+            {
+                Debug.WriteLine("\n\n\nConnection closed. Trying to reconnect...\n\n\n");
+                await Task.Delay(new Random().Next(0, 5) * 1000);
+                await hubConnection.StartAsync();
+            };
+
+            hubConnection.Reconnecting += (error) =>
+            {
+                Debug.WriteLine("\n\n\nConnection lost. Reconnecting...\n\n\n");
+                return Task.CompletedTask;
+            };
+
+            hubConnection.Reconnected += (connectionId) =>
+            {
+                Debug.WriteLine("\n\n\nReconnected with connection ID: " + connectionId);
+                return Task.CompletedTask;
+            };
+
+            hubConnection.ServerTimeout = TimeSpan.FromSeconds(30); 
+            hubConnection.KeepAliveInterval = TimeSpan.FromSeconds(15);
             try
             {
                 await hubConnection.StartAsync();
@@ -97,6 +121,7 @@ namespace Backgammon.Client.Services
         }
         public async Task MoveRequest(int source, int destination)
         {
+            Debug.WriteLine("CONNECTION STATUS: " + hubConnection.State);
             await hubConnection.InvokeAsync("MoveRequest", source, destination, _roomName);
         }
         public async Task GameDataRequest(string roomName)

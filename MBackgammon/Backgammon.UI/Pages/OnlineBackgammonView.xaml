@@ -212,14 +212,14 @@
 
 
                 <StackLayout Grid.Row="0"
-                    Grid.Column="6"
+                    Grid.Column="5"
                     BindableLayout.ItemsSource="{Binding EllipseCollections[18]}"
                     BindableLayout.ItemTemplateSelector="{StaticResource EllipseSelector}">
                 </StackLayout>
 
                 <Button
                    Grid.Row="0"
-                   Grid.Column="6"
+                   Grid.Column="5"
                    Style="{StaticResource PositionButtonStyle}"
                    Command="{Binding PositionSelectedCommand}"
                    CommandParameter="18"/>
